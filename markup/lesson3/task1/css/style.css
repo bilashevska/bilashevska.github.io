@@ -77,7 +77,7 @@ nav a:hover {
 	font-size: 14.67px;
 	color: #656363;
 	text-decoration: none;	
-	transition: background .2s;
+	transition: color .35s, background-color .5s, padding 0.3;
 }
 
 .menu li:first-child a {	
@@ -93,8 +93,8 @@ nav a:hover {
 /*all about content:*/
 .content {
 	float:right;
-	margin-right: 0px;
-	padding: 0px 35px;	
+	margin: 0px;
+	padding: 0px;	
 	width:750px;	
 	box-sizing: border-box;
 }
@@ -110,13 +110,15 @@ nav a:hover {
 }
 
 p {
-	padding: 50px 35px;
-	width:680px;
+	padding: 50px 85px;
+	padding-right: 0px;
+	width:750px;
 	box-sizing: border-box;
-	line-height:18px;
+	line-height:24px;
 	font-size: 13.33px;
 	text-align: left;
-	font-family: sans-serif;	
+	font-family: sans-serif;
+	box-sizing: border-box;	
 }
 
 /*footer*/
@@ -149,7 +151,7 @@ footer a {
 	color: #2c2c2c;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 	text-decoration: none;
-	transition: background .3s; 
+	transition: text-decoration .6s; 
 }
 
 footer a:hover {
