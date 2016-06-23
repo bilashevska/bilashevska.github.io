@@ -1,0 +1,161 @@
+body {
+	background-color: #f9f9f9;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 50px 50px 60px 45px;
+	width: 1060px;
+	background-color: #fff;
+	 
+}
+
+.logo {
+	width: 145px;
+	height: 40px;
+	background: url("../img/logo.png") no-repeat;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav ul {
+	font-size: 0;
+}
+
+nav {
+	margin-top: 40px;
+	height: 40px;
+	background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+}
+
+nav a {
+	display: block;
+	line-height: 40px;
+	font-size: 14.67px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	text-decoration: none;
+	padding: 0 40px;
+	transition: background .15s; 
+}
+nav a:hover {
+	background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%);
+	border-left:1px solid #838383;
+	border-right:1px solid #838383;
+	padding:0 39px;	
+}
+.main {
+	padding-top: 40px;
+}
+.main::after {
+	display: table;
+    content: "";
+    clear: both;
+}
+/*all about menu:*/
+ .menu {
+	width: 240px;
+	float:left;
+	margin-right: 50px;
+}
+.menu a {	
+	display: block;
+	padding-left: 25px;
+	width: 240px;
+	line-height: 40px;
+	font-size: 14.67px;
+	color: #656363;
+	text-decoration: none;
+	border: 1px solid #c8c8c8;
+	border-top: none; 
+	box-sizing: border-box;
+}
+.menu li:first-child a {	
+	border-top: 1px solid #c8c8c8; 
+}
+.menu a:hover {	
+	background: #f9f9f9;
+	padding-left: 30px;
+	color: #2c2c2c;
+}
+
+/*all about content:*/
+.content {
+	width:750px;
+	padding: 0px 35px;
+	margin-right: 0px;
+	float:right;
+	box-sizing: border-box;
+}
+
+ .picture {
+	width:680px;
+	height: 400px;
+	margin-bottom: 40px;
+	background: url("../img/bike.jpg") no-repeat;
+	float:right;
+	border: 1px solid #c8c8c8; 
+	box-sizing: border-box;
+}
+ .info {
+ 	display:block;
+	width:680px;
+	padding: 50px 35px;
+	text-align: left;
+	font-size: 13.33px;
+	line-height:18px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+/*footer*/
+footer li {
+	display: inline-block;
+	
+}
+footer li::after {
+	content:"2014 © All rights reserved";
+}
+
+footer ul {
+	font-size: 0;
+	float: left;
+	padding: 0;
+}
+
+footer {
+	margin-top: 40px;
+	height: 40px;
+	background: #e1e1e1;
+	
+}
+
+footer a {
+	display: block;
+	line-height: 40px;
+	font-size: 13.33px;
+	font-family: sans-serif;
+	color: #2c2c2c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	text-decoration: none;
+	padding: 0 25px;
+	transition: background .15s; 
+}
+footer li::after {
+	content:"2014 © All rights reserved";
+	color:#000;
+}
+footer a:hover {
+	text-decoration:underline;
+}
+footer span {
+	float: right;
+	text-align: right;
+	font-size: 13.33px;
+	font-family: sans-serif;
+	color: #2c2c2c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	line-height: 40px;
+	padding-right:25px;
+}
