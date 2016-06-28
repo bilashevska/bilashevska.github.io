@@ -1,0 +1,94 @@
+body {
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 50px 70px;
+	width: 960px;
+	height: 883px;
+	box-sizing: border-box;
+	background: url("../img/bg.jpg") no-repeat ;
+}
+
+header {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	height: 147px;
+	box-sizing: border-box;
+	background: url("../img/logo1.png") no-repeat;
+}	
+
+.info {
+	float: right;
+	padding-top: 105px;
+	width: 95px;
+	height: 105%;
+	box-sizing: border-box;
+}
+
+.info p {
+	color: white;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 8.47px;
+}
+
+.info p span {
+	font-weight: bold;
+}
+
+.items {
+	margin-top: 10px;	
+}
+
+.item {
+	display: inline-block;
+	margin: 0px 13px 68px 0px;	
+}
+
+.item:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.image {
+	width: 261px;
+	height: 178px;
+	border: 2px solid #aaaaaa;
+	box-sizing: border-box;
+}
+
+p {
+	text-align: center;
+	font-size: 15.24px;
+	font-family: Tahoma;
+	color: #c9c9c9;	
+}
+
+.image1 {
+	background: url("../img/india.jpg") no-repeat ;
+}
+.image2 {
+	background: url("../img/nepal.jpg") no-repeat ;
+}
+
+.image3 {
+	background: url("../img/tibet.jpg") no-repeat ;
+}
+
+.image4 {
+	background: url("../img/bhutan.jpg") no-repeat ;
+}
+
+.image5 {
+	background: url("../img/sri_lanka.jpg") no-repeat ;
+}
+
+.image6 {
+	background: url("../img/maldives.jpg") no-repeat ;
+}
+
+footer {
+	margin-top:100px;
+	width: 100%;
+	height: 30px;	
+	box-sizing: border-box;
+}
