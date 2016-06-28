@@ -2,28 +2,28 @@ body {
 	background: black;
 }
 .wrapper {
+	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 50px 70px;
 	width: 960px;
-	height: 883px;
-	box-sizing: border-box;
+	height: 883px;	
 	background: url("../img/bg.jpg") no-repeat ;
 }
 
 header {
+	box-sizing: border-box;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
 	height: 147px;
-	box-sizing: border-box;
 	background: url("../img/logo1.png") no-repeat;
 }	
 
 .info {
 	float: right;
+	box-sizing: border-box;	
 	padding-top: 105px;
 	width: 95px;
 	height: 105%;
-	box-sizing: border-box;
 }
 
 .info p {
@@ -51,10 +51,11 @@ header {
 }
 
 .image {
+	box-sizing: border-box;
 	width: 261px;
 	height: 178px;
 	border: 2px solid #aaaaaa;
-	box-sizing: border-box;
+	background: url("../img/India.jpg") no-repeat ;
 }
 
 p {
@@ -64,9 +65,6 @@ p {
 	color: #c9c9c9;	
 }
 
-.image1 {
-	background: url("../img/India.jpg") no-repeat ;
-}
 .image2 {
 	background: url("../img/nepal.jpg") no-repeat ;
 }
@@ -88,8 +86,8 @@ p {
 }
 
 footer {
+	box-sizing: border-box;
 	margin-top:100px;
 	width: 100%;
 	height: 30px;	
-	box-sizing: border-box;
 }
