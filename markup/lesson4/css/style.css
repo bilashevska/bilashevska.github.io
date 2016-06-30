@@ -1,0 +1,81 @@
+body {
+	width: 1280px;
+	height: 1060px;
+	background: url("../img/bg.jpg") no-repeat;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #fff;
+	 
+}
+ header {
+ 	padding: 10px 30px 0px;
+ 	border-sizing: border-box;
+ }
+
+ .logo {
+ 	float: left;
+ 	border-sizing: border-box;
+ 	width: 283px;
+ 	height: 164px;
+ 	border: 1px solid red;
+ 	background: url("../img/logo.png") no-repeat;
+ }
+
+ .information {
+ 	float: right;
+ 	border-sizing: border-box;
+ 	/*width: 283px;*/
+ 	height: 164px;
+ 	border: 1px solid red;
+ }
+
+ header:after {
+ 	display: table;
+    clear: both;
+    content: "";
+ }
+ .contacts {
+ 	text-align: right;
+ }
+
+ p { 	
+ 	text-align: left;
+	color: #128aa7;
+	font-size: 12px;
+ }
+
+ .item {
+ 	display: inline-block;
+ 	margin-right: 5px;
+ 	width: 42px;
+ 	margin-bottom: 10px;
+ }
+
+.country {
+ 	width: 42px;
+ 	height: 42px;
+ 	background: url("../img/i_flag.png") no-repeat;
+ }
+
+.country2 {
+ 	background: url("../img/b_flag.png") no-repeat;
+ }
+
+.country3 {
+ 	background: url("../img/m_flag.png") no-repeat;
+ }
+
+.country4 {
+ 	background: url("../img/n_flag.png") no-repeat;
+ }
+
+.country5 {
+ 	background: url("../img/s_flag.png") no-repeat;
+ }
+
+.country6 {
+ 	background: url("../img/t_flag.png") no-repeat;
+ }
