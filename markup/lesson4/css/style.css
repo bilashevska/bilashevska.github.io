@@ -1,16 +1,16 @@
 @font-face {
     font-family: Whipsmart; /* Имя шрифта */
     src: url( "../fonts/Whipsmart.ttf"); /* Путь к файлу со шрифтом */
-   }
+}
 
 body {
-	width: 1280px;
-	height: 1060px;
+	padding-top: 47px;
 	background: url("../img/bg.jpg") no-repeat;
+	background-size: cover;
 }
 
 .container {
-	margin: 0 auto;
+	margin: 0px auto;
 	width: 1000px;
 	background-color: #fff;
 	box-shadow: 0px 5px 2px rgba(0,0,0,0.35);	 
@@ -58,15 +58,20 @@ body {
  	display: inline-block;
  	margin: 30px 8px 0px 0px;
  }
+
 .countries {
 	clear: both; 
 }
 
-a { 
+.countries  a { 
  	display: block;	
  	text-align: center;
 	color: #128aa7;
 	font-size: 10px;
+ }
+
+.countries  a:hover { 
+	text-decoration: none;
  }
 
 .country {
@@ -98,24 +103,32 @@ a {
 
 /*menu*/
 nav {
+	position: relative;
 	padding-left: 65px;
+	z-index: 1;
 	box-sizing: border-box;
-	height: 40px;
-	background: #343434 ;
+	height: 40px;	
+	border-top: 2px solid #cacbcb;
 	border-bottom: 2px solid black;
+	background: #343434;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.75);	
+	
 }
 .menu {
-	font-size: 0;
+	font-size: 0;	
 }
 
 .menu>li {
 	position:relative;
 	display: inline-block;
 	box-sizing: border-box;	
-    height:40px;   
+    height:40px;
+    transition: text-shadow .2s;   
 }
-
-.menu>li a{
+.menu>li:hover>a {
+	text-shadow: 0px 3px 4px rgba(121,210,231,0.5);   
+}
+.menu>li a {
 	position: relative;
 	display: block;
 	padding-left: 10px;
@@ -134,7 +147,7 @@ nav {
 	margin-left: 8px;
 	box-sizing: border-box;
 	content: url("../img/t.png");
-	transition: transform 0.1s;    
+	transition: transform 0.2s;    
 }
 .menu .sub:hover>a:after {
 	box-sizing: border-box;
@@ -144,8 +157,8 @@ nav {
 
 /*submenu*/
 .submenu {
-	position:absolute;
-    display:none;
+	position: absolute;
+    display: none;
 	z-index: 2;     
     font-size: 0;
     background: #343434 ;	
@@ -159,9 +172,24 @@ li.sub:hover>ul.submenu {
 .submenu li {
 	box-sizing: border-box;
 	height:40px;
-    font-size: 0; 
-}
+    font-size: 0;
+    transition: background-color .2s;
+    transition: border-left .2s;
 
+}
+.submenu li:hover {
+	transition: background-color .3s;
+    background-color: #3d3d3d; 
+    border-left: 2px solid #128aa7; 
+}
+.banner {
+	box-sizing: border-box;
+	width: 1000px;
+	height: 237px;
+	border-top: 2px solid #128aa7;
+	border-bottom: 2px solid #128aa7;
+	background: url("../img/banner.jpg") no-repeat;
+}
 /*columns*/
 .columns {
 	margin: 0 auto;
