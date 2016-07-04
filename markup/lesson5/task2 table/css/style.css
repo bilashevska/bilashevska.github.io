@@ -1,0 +1,36 @@
+
+table {
+	margin: auto auto;
+    box-sizing: border-box;
+}
+
+
+
+td {
+	width: 60px;	
+    border: 7px solid #181611;
+    box-sizing: border-box;
+}
+.white {
+	background-color: white;
+}
+
+.yellow {
+	background-color: #fff27c;
+}
+
+.red {
+	background-color: #ff5e44;
+}
+
+.black {
+	background-color: #312f30;
+}
+
+.blue {
+	background-color: #0e4b8d;
+}
+
+tfoot td {
+	border:none;
+}
