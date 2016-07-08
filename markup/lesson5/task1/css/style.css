@@ -5,47 +5,62 @@
          url("../fonts/helveticaneue-thin-webfont.woff2") format("woff2"),
          url("../fonts/helveticaneue-thin-webfont.woff") format("woff"),
          url("../fonts/helveticaneue-thin-webfont.ttf") format("truetype");
-    font-weight:  100;
     font-style: normal;
 
 }
 
+/*style for body*/
 body {
 	position: relative;
+	min-width: 1215px;
 	height: 1028px;
 	font-family: helvetica;
 	background: url("../img/bg.jpg") no-repeat;
 	background-size: cover;
 }
 
+/*style for header*/
 header {
-	box-sizing: border-box;
 	position: relative;
+	padding: 0px 20px ;
+	box-sizing: border-box;
 	height: 36px;
-	padding: 0px 10px ;
 	text-align: center;
 	background-color: #075190;
 }
+
 header>div {
 	display: inline-block;
-	box-sizing: border-box;
 	float: right;
 	padding: 0px 15px;
+	box-sizing: border-box;
 	height: 36px;
 	line-height: 36px;
 	font-size: 14px;
-	color: white;
-	
+	color: white;	
 }
-.field_1 {
+
+.field_1 { /*flag*/
 	background: url("../img/border.png") center left no-repeat;
 }
-.field_2 {
-	border: 2px solid #58a3dd ;
-	background: #4299d2 linear-gradient(90deg,rgba(2,2,2, 0.3) 20%, rgba(255,255,255, 0.3) 100%);
+.field_1 i{
+	margin-right: 10px;
+	font-size: 20px;
 }
+
+.field_2 { /*for registration*/
+	border: 1px solid #58a3dd ;
+	background: #4299d2 linear-gradient(to top,rgba(2,2,2, 0.2) 20%, rgba(255,255,255, 0.3) 100%);
+	color: white;
+}
+
 .field_2 a {
 	color: white;
+	transition: text-shadow 0.5s;
+}
+.field_2 a:hover {
+	text-decoration: none;
+	text-shadow: 0px 2px 5px rgba(0,06,0,0.5);
 }
 
 ul {
@@ -67,6 +82,7 @@ li>a {
 	font-size: 14px;	
 	color: #5cafe7;
 	text-decoration: none;
+	transition:background-color 0.3s, color 0.4s;
 }
 
 li a:hover {
@@ -74,12 +90,8 @@ li a:hover {
 	color: white;
 }
 
-.panel {	
-	display: inline-block;
-	float: right;
-}
-
-.form {
+/*style for div.content*/
+.content {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -89,14 +101,15 @@ li a:hover {
 	box-sizing: border-box;
 	width: 560px;
 	height: 614px;
-	border: 1px solid red;
 }
 
+/*style for div.form-title*/
 .form-title {
 	margin-bottom: 2px;
 	background-color: rgba(0,0,0,.63);	
 }
 
+/*style for div.form-body*/
 .form-body {
 	padding: 35px 0px 20px;
 	box-sizing: border-box;
@@ -104,6 +117,7 @@ li a:hover {
 	background-color: rgba(0,0,0,.63);
 }
 
+/*facebook-button*/
 button {
 	position: relative;
 	margin: 0 auto;
@@ -116,36 +130,48 @@ button {
 	background: #354d89;
 	border-radius: 3px;
 	border: none;
+	outline: none;
 	border-top: 1px solid #758ab5;
 }
-span{
-	vertical-align: middle;
-	
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	box-shadow:0px 2px 5px rgba(29,26,22,0.4);
+}
+
+span.bold {
+	position: relative;
+	font-weight: bold;
+}
+span.regular {
+	font-weight: normal;
 }
 .fa-angle-right {
 	float: right;
 	font-size: 20px;
 	display: inline-block;
-	margin:0px auto;
-
 }
+
 .fa-facebook {
 	float: left;
 	font-size: 24px;
 	display: inline-block;
-	margin:0px auto;
 }
-span:before{
+
+span.bold:before {
 	display: inline-block;
 	content: url("../img/merge.png");
 	position: absolute;
-	height: 35px;
-	top:-1px;
-	left: 15%;
-	padding: 0px;
 	box-sizing: border-box;	
+	height: 35px;
+	top: -40%;
+	left: -15%;	
 }
 
+/*Input form*/
 form {	
 	display: block;
 	margin: 0px auto;
@@ -153,11 +179,7 @@ form {
 	text-align: left;
 }
 
-i {
-	margin-right: 5px;
-	color: #fff;
-}
-
+/*styles for input`s*/
 input[type="text"] ,
 input[type="password"] {
 	display: block;
@@ -181,7 +203,7 @@ input[type="checkbox"], label {
 	color: white;
 }
 
-input[type="button"] {
+input[type="submit"] {
 	display: block;
 	margin: 20px auto;
 	box-sizing: border-box;
@@ -194,6 +216,14 @@ input[type="button"] {
 	color: white;
 	background-color: #4eabda;
 	background: linear-gradient(90deg, #4299d2 0%,#65a8e4 100%), linear-gradient(90deg, #000 20%,#fff 100%);
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+	cursor: pointer;
 }
 
 input:focus::-webkit-input-placeholder {color:white;}
@@ -223,21 +253,11 @@ input:focus {
 }
 
 .form-body p.ou {
-	margin: 30px 0px 27px;
+	margin: 20px 0px 10px;
+	line-height: 36px;
 	font-size: 14px;
 	color: #999;
-}
-
-.form-body p.ou:before {
-	display: inline-block;
-	margin-right: 5px;	
-	box-sizing: border-box;
-	content: url("../img/ou.png"); 
-}
-
-.form-body p.ou:after {
-	display: inline-block;
-	margin-left: 5px;	
-	box-sizing: border-box;
-	content: url("../img/ou.png");
+    background: linear-gradient(to top, #000000 0%, #666666 100%) 32.5% no-repeat,
+    linear-gradient(to top, #000000 0%, #666666 100%) 67.5% no-repeat;
+    background-size: 123px 2px;
 }

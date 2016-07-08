@@ -6,8 +6,6 @@
 	<link rel="icon"  href="img/favicon.png">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-<!--     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css"> -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +21,7 @@
             <li><a href="">Ajuda</a></li>          
         </ul>
     </header>
-    <div class="form">
+    <div class="content">
         <div class="form-title">
             
             <p>Cadastre-se</p>
@@ -31,20 +29,20 @@
         <div class="form-body">
             <button>
                 <i class="fa fa-facebook md-36" aria-hidden="true" ></i>
-                <span>Log In with Facebook </span>
+                <span class="bold">Log In <span class="regular">with</span> Facebook </span>
                 <i class="fa fa-angle-right " aria-hidden="true"></i>
 
             </button>
             <p class="ou">OU</p>
-            <form action="...">
-                <input type="text" placeholder="First Name"/>
-                <input type="text" placeholder="Last Name"/>
-                <input type="text" placeholder="Email Address"/>
-                <input type="password" placeholder="Choose Password"/>
-                <input type="password" placeholder="Password Confirm"/>
+            <form action="#">
+                <input type="text" id="f_name" placeholder="First Name" required/>
+                <input type="text" id="l_name"placeholder="Last Name" required/>
+                <input type="text" id="e-mail" placeholder="Email Address" required/>
+                <input type="password" id="pass" placeholder="Choose Password" required/>
+                <input type="password" id="pass_c" placeholder="Password Confirm" required/>
                 <input type="checkbox" id="ch">
                 <label for="ch">Send me Youbike updates and tips</label>
-                <input type="button" value="Create my account">
+                <input type="submit" value="Create my account">
             </form>
                 <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
         </div>
