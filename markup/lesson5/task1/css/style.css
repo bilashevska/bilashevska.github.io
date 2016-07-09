@@ -40,15 +40,18 @@ header>div {
 	color: white;	
 }
 
-.field_1 { /*flag*/
+ /*flag*/
+.field_1 {
 	background: url("../img/border.png") center left no-repeat;
 }
+
 .field_1 i{
 	margin-right: 10px;
 	font-size: 20px;
 }
 
-.field_2 { /*for registration*/
+/*for registration*/
+.field_2 { 
 	border: 1px solid #58a3dd ;
 	background: #4299d2 linear-gradient(to top,rgba(2,2,2, 0.2) 20%, rgba(255,255,255, 0.3) 100%);
 	color: white;
@@ -58,6 +61,7 @@ header>div {
 	color: white;
 	transition: text-shadow 0.5s;
 }
+
 .field_2 a:hover {
 	text-decoration: none;
 	text-shadow: 0px 2px 5px rgba(0,06,0,0.5);
@@ -125,17 +129,19 @@ button {
 	box-sizing: border-box;
 	width: 275px;
 	height: 35px;
+	border: none;
+	border-top: 1px solid #758ab5;
+	border-radius: 3px;
+	outline: none;
 	font-size: 16px;
 	color: white;
 	background: #354d89;
-	border-radius: 3px;
-	border: none;
-	outline: none;
-	border-top: 1px solid #758ab5;
+	transition: background 0.4s;
 }
 
 button:hover {
 	cursor: pointer;
+	background-image:linear-gradient(to top,rgba(2,2,2, 0.2) 20%, rgba(255,255,255, 0.3) 100%);
 }
 
 button:active {
@@ -145,21 +151,16 @@ button:active {
 span.bold {
 	position: relative;
 	font-weight: bold;
-    vertical-align: middle;
 }
+
 span.regular {
 	font-weight: normal;
 }
-.fa-angle-right {
-	float: right;
-	font-size: 20px;
-	display: inline-block;
-}
 
 .fa-facebook {
-	float: left;
-	font-size: 24px;
 	display: inline-block;
+	float: left;
+	font-size: 20px;
 }
 
 span.bold:before {
@@ -172,7 +173,13 @@ span.bold:before {
 	content: url("../img/merge.png");
 }
 
-/*Input form*/
+.fa-angle-right {
+	display: inline-block;
+	float: right;
+	font-size: 18px;
+}
+
+/*input form*/
 form {	
 	display: block;
 	margin: 0px auto;
@@ -181,7 +188,7 @@ form {
 }
 
 /*styles for input`s*/
-input[type="text"] ,
+input[type="text"],
 input[type="password"] {
 	display: block;
 	margin: 20px auto 0px;
@@ -194,7 +201,14 @@ input[type="password"] {
 	color: white;
 	background: #4eabda linear-gradient(90deg, #111 0%,#0e0d0d 100%);
 	box-shadow: inset 0px 2px 5px rgba(29,26,22,0.2);
-	box-shadow: 0px 1px 0px rgba(75,75,75,1);	
+	box-shadow: 0px 1px 0px rgba(75,75,75,1);
+	transition: box-shadow 0.6s;	
+}
+
+input[type="text"]:hover ,
+input[type="password"]:hover {
+	box-shadow: inset 0px 2px 5px rgba(255,255,255,0.6);
+	box-shadow: 0px 1px 0px rgba(255,255,255,1);	
 }
 
 input[type="checkbox"], label {
@@ -202,6 +216,7 @@ input[type="checkbox"], label {
 	box-sizing: border-box;
 	font-size: 14px;
 	color: white;
+	transition: text-shadow 0.4s;
 }
 
 input[type="submit"] {
@@ -211,27 +226,29 @@ input[type="submit"] {
 	width: 150px;
 	height: 35px;
 	border: 1px solid #666;
+	border-radius: 4px;
 	font-size: 14px;
 	text-align: center;
-	border-radius: 4px;
 	color: white;
 	background-color: #4eabda;
 	background: linear-gradient(90deg, #4299d2 0%,#65a8e4 100%), linear-gradient(90deg, #000 20%,#fff 100%);
+	transition: text-shadow 0.4s;
 }
 
 input[type="submit"]:hover,
 input[type="checkbox"]:hover, label:hover {
 	cursor: pointer;
+	text-shadow: 0px 1px 0px rgba(75,103,166,0.7);
 }
 
 input:focus::-webkit-input-placeholder {color:white;}
-input:focus::-moz-placeholder          {color:white;}/* Firefox 19+ */
-input:focus:-moz-placeholder           {color:white;}/* Firefox 18- */
+input:focus::-moz-placeholder          {color:white;}
+input:focus:-moz-placeholder           {color:white;}
 input:focus:-ms-input-placeholder      {color:white;}
 
 input:focus {
-	background: #1b5288;
 	color: white;
+	background: #1b5288;
 	box-shadow: inset 0px 2px 5px rgba(29,26,22,0.2);
 	box-shadow: 0px 1px 0px rgba(75,75,75,1);
 }
