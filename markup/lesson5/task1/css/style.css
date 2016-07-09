@@ -121,7 +121,7 @@ li a:hover {
 button {
 	position: relative;
 	margin: 0 auto;
-	padding: 5px 25px 5px 15px;
+	padding: 8px 25px 10px 15px;
 	box-sizing: border-box;
 	width: 275px;
 	height: 35px;
@@ -145,6 +145,7 @@ button:active {
 span.bold {
 	position: relative;
 	font-weight: bold;
+    vertical-align: middle;
 }
 span.regular {
 	font-weight: normal;
@@ -163,12 +164,12 @@ span.regular {
 
 span.bold:before {
 	display: inline-block;
-	content: url("../img/merge.png");
 	position: absolute;
+	top: -51%;
+	left: -10%;
 	box-sizing: border-box;	
-	height: 35px;
-	top: -40%;
-	left: -15%;	
+	height: 34px;	
+	content: url("../img/merge.png");
 }
 
 /*Input form*/
@@ -218,11 +219,8 @@ input[type="submit"] {
 	background: linear-gradient(90deg, #4299d2 0%,#65a8e4 100%), linear-gradient(90deg, #000 20%,#fff 100%);
 }
 
-input[type="submit"]:hover {
-	cursor: pointer;
-}
-
-input[type="checkbox"]:hover {
+input[type="submit"]:hover,
+input[type="checkbox"]:hover, label:hover {
 	cursor: pointer;
 }
 
