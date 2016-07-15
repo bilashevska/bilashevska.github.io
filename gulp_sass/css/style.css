@@ -1,0 +1,48 @@
+body {
+	min-width: 1600px;
+	background-color: #ffffff;
+	background-size: cover;
+}
+
+header {
+	padding: 35px 245px 30px 245px;
+	box-sizing: border-box;
+	height: 100px;
+	background: #262626;
+}
+
+.logo {
+	float: left;
+	width: 107px;
+	height: 33px;
+	background: url("../img/Logo.png");
+	outline: 1px solid red;
+}
+
+nav {
+	float: right;
+	padding: 0px;
+	font-size: 0px;
+	outline: 1px solid red;
+}
+
+li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	padding:0px 20px 0px 40px;
+	box-sizing: border-box;	
+	line-height: 33px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #d9d9d9;
+	transition: color 0.4s;
+}
+
+nav a:hover {
+	color: #ff6760;
+}
