@@ -1,11 +1,31 @@
+@font-face {
+	font-family: "regular";
+	src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: "black";
+	src: url("../fonts/Lato-Black.ttf");
+}
+
+@font-face {
+	font-family: "light_italic";
+	src: url("../fonts/Lato-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: "light";
+	src: url("../fonts/Lato-Light.ttf");
+}
+
 body {
-	min-width: 1600px;
+	min-width: 1200px;
 	background-color: #ffffff;
 	background-size: cover;
 }
 
 header {
-	padding: 35px 245px 30px 245px;
+	padding: 35px 150px 30px;
 	box-sizing: border-box;
 	height: 100px;
 	background: #262626;
@@ -16,14 +36,14 @@ header {
 	width: 107px;
 	height: 33px;
 	background: url("../img/Logo.png");
-	outline: 1px solid red;
+/*	outline: 1px solid red;*/
 }
 
 nav {
 	float: right;
 	padding: 0px;
 	font-size: 0px;
-	outline: 1px solid red;
+/*	outline: 1px solid red;*/
 }
 
 li {
@@ -37,7 +57,7 @@ nav a {
 	line-height: 33px;
 	font-size: 14px;
 	text-transform: uppercase;
-	font-family: sans-serif;
+	font-family: black;
 	text-decoration: none;
 	color: #d9d9d9;
 	transition: color 0.4s;
@@ -45,4 +65,53 @@ nav a {
 
 nav a:hover {
 	color: #ff6760;
+}
+
+.slider {
+	padding: 55px 150px;
+	background: #2a2a2a;
+}
+
+.slider p{
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 40px;
+	line-height: 1.2;
+	font-family: light;
+	color: white;
+}
+
+.first {
+	font-size: 60px;
+	font-family: light;
+	color: white;
+}
+
+.bold {
+	font-family: black;
+}
+
+.italic {
+	font-family: light_italic;
+}
+
+button {
+	display: block;
+	margin: 0px auto;
+	padding: 15px 40px;
+	border: none;
+	border-radius: 6px;
+	font-size: 14px;
+	font-family: black;
+	text-transform: uppercase;
+	color: white;
+	background-color: #ff6760;	
+	outline: none;
+	transition: text-shadow .3s, box-shadow .4s;
+}
+
+button:hover {
+	cursor: pointer;
+	text-shadow: 0px 2px 3px #000;
+	box-shadow: 0px 3px 7px #000;
 }
