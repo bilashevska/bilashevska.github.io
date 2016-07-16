@@ -74,6 +74,7 @@ nav a:hover {
 
 .slider p{
 	margin-bottom: 40px;
+	box-sizing: border-box;
 	text-align: center;
 	font-size: 40px;
 	line-height: 1.2;
@@ -83,8 +84,6 @@ nav a:hover {
 
 .first {
 	font-size: 60px;
-	font-family: light;
-	color: white;
 }
 
 .bold {
@@ -99,6 +98,7 @@ button {
 	display: block;
 	margin: 0px auto;
 	padding: 15px 40px;
+	box-sizing: border-box;
 	border: none;
 	border-radius: 6px;
 	font-size: 14px;
@@ -114,4 +114,69 @@ button:hover {
 	cursor: pointer;
 	text-shadow: 0px 2px 3px #000;
 	box-shadow: 0px 3px 7px #000;
+}
+
+.portfolio {
+	margin: 0px auto;
+	padding: 55px 150px;
+	text-align: center;
+	box-sizing: border-box;
+	outline: 1px solid red;
+}
+
+.img {
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+	width: 240px;
+	height: 220px;
+	background: url("../img/img1.png") no-repeat;
+}
+
+.img2 {
+	background: url("../img/img2.png") no-repeat;
+}
+
+.img3 {
+	background: url("../img/img3.png") no-repeat;
+}
+
+.img4 {
+	background: url("../img/img4.png") no-repeat;
+}
+
+.img5 {
+	background: url("../img/img5.png") no-repeat;
+}
+
+.img6 {
+	background: url("../img/img6.png") no-repeat;
+}
+
+.img7 {
+	background: url("../img/img7.png") no-repeat;
+}
+
+.img8 {
+	background: url("../img/img8.png") no-repeat;
+}
+
+.img9{
+	background: url("../img/img9.png") no-repeat;
+}
+
+.img10 {
+	background: url("../img/img10.png") no-repeat;
+}
+
+.img11 {
+	background: url("../img/img11.png") no-repeat;
+}
+
+.img12 {
+	background: url("../img/img12.png") no-repeat;
+}
+
+portfolio:nth-child(odd) {
+	margin-right: 0px;
+	outline: 2px solid black;
 }
