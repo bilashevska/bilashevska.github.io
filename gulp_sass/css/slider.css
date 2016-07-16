@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "black";
+  src: url("../fonts/Lato-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "light_italic";
+  src: url("../fonts/Lato-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/Lato-Light.ttf") format("truetype"); }
+
+.slider {
+  padding: 55px 150px;
+  box-sizing: border-box;
+  background: #2a2a2a; }
+  .slider .slider p {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: light;
+    color: #fff; }
+    .slider .slider p .first {
+      font-size: 60px; }
+    .slider .slider p .bold {
+      font-family: black; }
+    .slider .slider p .italic {
+      font-family: light_italic; }
+  .slider button {
+    display: block;
+    margin: 0px auto;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: black;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff6760;
+    outline: none;
+    transition: text-shadow .3s, box-shadow .4s; }
+  .slider button:hover {
+    cursor: pointer;
+    text-shadow: 0px 2px 3px #000;
+    box-shadow: 0px 3px 7px #000; }

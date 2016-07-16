@@ -1,0 +1,10 @@
+@import 'settings';
+@import 'header';
+@import 'slider';
+@import 'portfolio';
+
+body {
+	min-width: 1200px;
+	background-color: $w-color;
+	background-size: cover;
+}
