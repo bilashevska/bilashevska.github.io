@@ -1,0 +1,104 @@
+.contacts {
+	padding: 60px 150px;
+	background-color: #313131;
+	text-align: center;
+
+	h1 {
+		font-size: 30px;
+		font-family: 'black';
+		color: #fff;
+	}
+
+	p {
+		margin-top: 25px;
+		font-size: 20px;
+		font-family: 'light';
+		color: #bebebe;
+	}
+	
+	.info {
+		margin: 27px 0px;  
+		div {
+			display: inline-block;
+			color: white;
+			&.adress {
+				margin-right: 30px;	
+			}
+			i {
+				margin-right: 5px;
+				color: #ff6760;
+			}
+			span {
+			color: white;
+			font-family: 'regular';	
+			}
+		}
+	}
+	.social {
+		
+		a {
+			display: inline-block;
+			position: relative;			
+			margin-right: 15px;
+			box-sizing: border-box;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			border-radius: 50%;			
+			color: #fff;			
+			i {
+				position: relative;
+				top: -1px;
+				z-index: 2;
+			}
+			div {
+				position: absolute;
+				top: -1px;
+				left: -1px;
+				z-index: 1;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				transition: all .6s;
+			}
+			&.rss {
+				border: 2px solid #f3b25b;
+				.rss__circle {
+					background-color: #f3b25b;
+				} 
+			}
+			&.fb {
+				border: 2px solid #5883c0;
+				.fb__circle {
+					background-color: #5883c0;
+				} 
+				
+			}
+			&.tw {
+				border: 2px solid #63bee0;
+				.tw__circle {
+					background-color: #63bee0;
+				}				
+			}
+			&.dribble {
+				border: 2px solid #e9a0c4;
+				.dribble__circle {
+					background-color: #e9a0c4;
+				}				
+			}
+			&.pin {
+				margin-right: 0px;
+				border: 2px solid #d35051;
+				.pin__circle {
+					background-color: #d35051;	
+				}				
+			}	
+			
+		}
+		a:hover div{
+				transform: rotateY(180deg);
+		}
+	}
+
+}

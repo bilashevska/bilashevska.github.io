@@ -1,0 +1,188 @@
+.portfolio {
+	margin: 0px auto;
+	padding: 55px 150px;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'regular';
+	color: #616161;
+	
+	h1 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	
+	p {
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+	
+	// .buttons {
+		button {
+			margin-bottom: 30px;
+			@include padding(12px 20px);
+			border: none;
+			border-radius: 6px;
+			font-size: 12px;
+			font-family: 'black';
+			text-transform: uppercase;
+			color: $w-color;
+			background-color: #ff6760;	
+			outline: none;
+			transition: all .3s;			
+			&:hover {
+				background-color: #595959;
+				cursor: pointer;
+			}
+			&:focus {
+				background-color: darken(#595959,12%);
+			}
+		}
+	// }
+	.graphic:focus {
+		~div {
+			.i, .m {
+				width: 0;
+				//display: none;
+			}
+		}
+		
+	}
+
+	.illustration:focus {
+		~div {
+			.g, .m {
+			width: 0;
+			//display: none;
+		}
+		}		
+	}
+
+	.motion:focus {
+		~div {
+			.g, .i {
+				width: 0;
+			//display: none;
+		}
+		}		
+	}
+		
+	.img {
+		display: inline-block;
+		position: relative;
+		margin: 0px 10px 10px 0px;
+		width: 240px;
+		height: 220px;
+		overflow: hidden;
+		transition: width .4s;
+		@include img-path("../img/img1.png");
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin:0px;
+			padding: 40%;
+			box-sizing:border-box;		
+			width: 240px;
+			height: 220px;		
+	    	content: "img1";
+	    	text-align: center;
+	    	font-size: 18px;   	
+	    	color:#fff;
+			background-color: rgba(0,0,0,0%);		
+			opacity: 0;		
+			transition: opacity 0.4s;
+		}
+		&:hover:after {
+			opacity: 1;
+			background-color: rgba(0,0,0,0.6);
+		}	
+	}
+
+	.img2 {
+		@extend .img;
+			&:after {
+    		content: "img2";
+			}
+		@include img-path("../img/img2.png");
+	}
+
+	.img3 {
+		@extend .img;
+		&:after {
+    		content: "img3";
+			}
+		@include img-path("../img/img3.png");
+	}
+
+	.img4 {
+		@extend .img;
+		&:after {
+    		content: "img4";
+			}
+		@include img-path("../img/img4.png");
+	}
+
+	.img5 {
+		@extend .img;
+		&:after {
+    		content: "img5";
+			}
+		@include img-path("../img/img5.png");
+	}
+
+	.img6 {
+		@extend .img;
+		&:after {
+    		content: "img6";
+			}
+		@include img-path("../img/img6.png");
+	}
+
+	.img7 {
+		@extend .img;
+		&:after {
+    		content: "img7";
+			}
+		@include img-path("../img/img7.png");
+	}
+
+	.img8 {
+		@extend .img;
+		&:after {
+    		content: "img8";
+			}
+		@include img-path("../img/img8.png");
+	}
+
+	.img9{
+		@extend .img;
+		&:after {
+    		content: "img9";
+			}
+		@include img-path("../img/img9.png");
+	}
+
+	.img10 {
+		@extend .img;
+		&:after {
+    		content: "img10";
+			}
+		@include img-path("../img/img10.png");
+	}
+
+	.img11 {
+		@extend .img;
+		&:after {
+    		content: "img11";
+			}
+		@include img-path("../img/img11.png");
+	}
+
+	.img12 {
+		@extend .img;
+		&:after {
+    		content: "img12";
+			}
+		@include img-path("../img/img12.png");
+	}
+}

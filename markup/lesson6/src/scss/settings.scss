@@ -1,0 +1,25 @@
+
+$w-color: #fff;
+$header-bg: #262626;
+$slider-bgc: #2a2a2a;
+$services-bgc: #f8f8f8;
+$a-color: #d9d9d9;
+$height: 33px;
+$button-color: #ff6760;
+
+@mixin padding ($padding) {
+	padding:$padding;
+	box-sizing: border-box;
+}
+
+@mixin img-path($path) {
+	background: url($path) no-repeat;
+}
+
+body {
+	padding: 17px 45px 0px;
+	min-width: 1000px;
+	background-color: $w-color;
+	background-size: cover;
+}
+ 

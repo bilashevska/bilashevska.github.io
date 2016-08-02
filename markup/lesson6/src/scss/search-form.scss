@@ -1,0 +1,68 @@
+.search-form {
+	margin: 10px 6px 14px;
+	.byAuto,
+	.byTires,
+	.byDisks {
+		display: inline-block;
+	}
+
+	.byAuto {
+		position: relative;
+		padding: 5px ;
+		width: 405px;
+		border: 1px solid black;
+		border-radius: 30px;
+
+		h1{
+			position: absolute;
+			left: 25%;
+			right: 25%;
+			text-align: center;
+			font-family: 'Arial Black';
+			color: #154467;
+			font-size: 12px;
+		}
+
+		h2 {
+			margin-bottom: 5px;
+			font-family: 'Arial Black';
+			color: #154467;
+			font-size: 10px;
+		}
+		
+		form {
+			width: 175px;
+			label {
+				display: inline-block;
+				box-sizing: border-box;
+				width: 70px;
+				font-size: 10px;
+				font-family: Arial;
+				text-align: left;
+
+				span {
+					font-size: 8px;
+					color: #77858b;
+				}
+				
+			}
+			div {
+				margin-bottom: 5px;
+				vertical-align: top;
+			}
+			select {
+				display: inline-block;
+				width: 100px;
+			}
+			&.disks {
+				float: left;
+			}
+
+			&.tires {
+				float: right;
+				text-align: right;
+			}
+			
+		}
+	}
+}

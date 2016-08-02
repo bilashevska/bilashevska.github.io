@@ -1,0 +1,71 @@
+.info {
+	line-height: 25px;
+	div {
+		display: inline-block;
+	}
+		.phone {
+			font-size: 18px;
+			.phone-icon {
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				border-radius: 10px;				
+				text-align: center;
+				color: #fff;
+				background: linear-gradient(to top, #206988 0%, #114165 59%, #0c3256 100%);
+			}
+			span {
+				font-family: Arial;
+				color: #5e696d;
+			}
+		}
+		.authorization {
+			margin: 0px 17px;
+			padding: 0px 10px 0px 7px;
+			background: linear-gradient(to bottom, #206988 0%, #114165 59%, #0c3256 100%);;
+			border-radius: 3px;
+			font-family: Lucida, sans-serif;
+			box-shadow: 3px 3px 3px rgba(150, 150, 150, .75);
+			i {
+				color: #fff;
+			}
+			input {
+				width: 113px;
+				border-radius: 2px;
+				font-size: 10.91px;
+			}
+			a {
+				font-size: 10.91px;
+				color: #fff;
+				text-decoration: none;
+				&.enter:after {
+					margin-left: 5px;
+					content: "|";
+				}
+				&.forgotten-password {
+					font-family: Lucida, sans-serif;
+					margin-left: 20px;
+					padding:0px;
+					font-size: 12px;
+					color: #afb2b5;
+					border-bottom: 1px solid #afb2b5;
+				}
+			}
+		}
+		.navigation {
+			width: 75px;
+			border: 1px solid #c1c8cb;
+			border-radius: 15px;
+			line-height: 21px;
+			font-size: 12px;
+			text-align: center;
+			word-spacing: 8px;
+			color: #76848a;
+			a {
+				color: #76848a;
+
+			}
+
+		}
+
+}

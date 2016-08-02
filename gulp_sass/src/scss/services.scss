@@ -1,0 +1,51 @@
+.services {
+	display: flex;
+	justify-content: space-around;
+	padding: 75px 150px;
+	background-color: $services-bgc;
+
+		div {
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			color: #616161;
+
+		h1 {
+			font-size: 18px;
+			font-family: 'black';
+
+		}
+
+		p {
+			margin-top: 10px;
+			line-height: 20px;
+			font-size: 14px;
+			font-family: 'light';
+		}
+
+		.bg-1 {
+			margin: 0 auto 30px;
+			width: 75px;
+			height: 75px;
+			background: url("../img/sprite.png") -10px 0 no-repeat ;
+		}
+
+		.bg-2 {
+			@extend .bg-1; 
+			background-position: -92px 0;
+		}
+
+		.bg-3 {
+			@extend .bg-1; 
+			background-position: -180px 0;
+		}
+
+		.bg-4 {
+			@extend .bg-1; 
+			background-position: -264px 0;
+		}
+
+
+
+	}
+}

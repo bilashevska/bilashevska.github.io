@@ -1,0 +1,37 @@
+header {
+	@include padding(35px 150px 30px);
+	height: 100px;
+	background: $header-bg;
+
+	.logo {
+		float: left;
+		width: 107px;
+		height: $height;
+		@include img-path("../img/Logo.png");
+	}
+
+	nav {
+		float: right;
+		padding: 0px;
+		font-size: 0px;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				@include padding(0px 20px 0px 40px);
+				line-height: $height;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-family: 'black';
+				text-decoration: none;
+				color: #d9d9d9;
+				transition: color 0.4s;
+			}
+			a:hover {
+				color: #ff6760;
+			}
+		}		
+
+	}
+
+}
