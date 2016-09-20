@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
+<div class="wrapper">
 	<div class="info">
 		<div class="phone">
 			<div class="phone-icon">
@@ -33,11 +34,11 @@
 	<nav>
 		<div class="menu">
 			<ul>
-				<li><a href="#">О КОМПАНИИ</a</li>
-				<li><a href="#">ОПЛАТА</a</li>
-				<li><a href="#">ДОСТАВКА</a</li>
-				<li><a href="#">СТАТЬИ</a</li>
-				<li><a href="#">КОНТАКТЫ</a</li>
+				<li><a href="#">О КОМПАНИИ</a></li>
+				<li><a href="#">ОПЛАТА</a></li>
+				<li><a href="#">ДОСТАВКА</a></li>
+				<li><a href="#">СТАТЬИ</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>
 			</ul>
 		</div>
 		<div class="cart">
@@ -49,57 +50,172 @@
 				
 		</div>	
 	</nav>
-<div class="search-form">
-	<div class="byAuto">
+<!-- <div class="search-form">
+
+	<div class="by-auto">	
 		<h1>Поиск по автомобилю</h1>
-		<form action="#" class="disks">
-			<h2>Диски:</h2>
-			<div class="formLine">
-				<label for="select">Марка <span class="type">авто:</span></label>
-				<select  id="select"></select>
+		<div class="disks">
+		<h2>Диски</h2>
+			<div>
+				<label for="autoDisks">Марка <span>авто</span></label>
+				<select id="autoDisks">
+				</select>
 			</div>
-			<div class="formLine">
-				<label for="select-model">Модель <span class="type">автомобиля:</span></label>
-				<select  id="select-model"></select>
+			<div>
+				<label for="modelDisks">Модель <span>автомобиля</span></label>
+				<select id="modelDisks">
+				</select>
 			</div>
-			<div class="formLine">
-				<label for="select-year">Год выпуска <span class="type">автомобиля:</span></label>
-				<select  id="select-year"></select>
+			<div>
+				<label for="yearDisks">Год выпуска <span>автомобиля</span></label>
+				<select id="yearDisks">
+				</select>
 			</div>
-			<div class="formLine">
-				<label for="select-complect">Комплектация</label>
-				<select  id="select-complect"></select>
+			<div>
+				<label for="complectDisks">Комплектация</label>
+				<select id="complectDisk">
+				</select>
+			</div>						
+		</div>
+		<div class="tires">
+		<h2>Шины</h2>
+			<div>
+				<label for="autoTires">Марка <span>авто</span></label>
+				<select id="autoTires">
+				</select>
 			</div>
-		</form>
-		<form action="#" class="tires">
-			<h2>Шины:</h2>
-			<div class="formLine">
-				<label for="select">Марка <span class="type">авто:</span></label>
-				<select  id="select"></select>
+			<div>
+				<label for="modelTires">Модель <span>автомобиля</span></label>
+				<select id="modelTires">
+				</select>
 			</div>
-			<div class="formLine">
-				<label for="select-model">Модель <span class="type">автомобиля:</span></label>
-				<select  id="select-model"></select>
+			<div>
+				<label for="yearTires">Год выпуска <span>автомобиля</span></label>
+				<select id="yearTires">
+				</select>
 			</div>
-			<div class="formLine">
-				<label for="select-year">Год выпуска <span class="type">автомобиля:</span></label>
-				<select  id="select-year"></select>
-			</div>
-			<div class="formLine">
-				<label for="select-complect">Комплектация</label>
-				<select  id="select-complect"></select>
-			</div>
-		</form>
+			<div>
+				<label for="complectTires">Комплектация</label>
+				<select id="complectTires">
+				</select>
+			</div>		
+		</div>
+		<a href="#">ПОИСК</a>
 	</div>
-	<div class="byTires">
+
+	<div class="by-tires">
+		<h1></h1>
+		<div>
+			<label for="sizeTires1">Размер:</label>
+			<select id="sizeTires1">
+			</select>
+			<span>/</span>
+			<select id="sizeTires2">
+			</select>
+		</div>	
+		<div>
+			<label for="rTires">R</label>
+			<select id="rTires">
+			</select>
+		</div>
+		<div>
+			<label for="seasonTires">Сезон</label>
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</div>
+		<a href="#">ПОИСК</a>
+	</div>
+	
+	<div class="by-disks">
+	<label for="autoDisks">Марка <span>авто</span></label>
+		<select id="autoDisks">
+		</select>
+	<a href="#">ПОИСК</a>	
+	</div>
+		
+</div> -->
+<div class="content">
+	<div class="list"></div>
+	<div class="production">
+		<div class="product">
+			<h1>Goodyear</h1>
+			<h2>Ultra Grip Extreme</h2>
+			<div class="type1"></div>
+			<p>90.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Nokian</h1>
+			<h2>Hakkapeliitta R</h2>
+			<div class="type2"></div>
+			<p>115.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Hankook</h1>
+			<h2>K 708 155/65 R14</h2>
+			<div class="type3"></div>
+			<p>393.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Goodyear</h1>
+			<h2>Ultra Grip Extreme</h2>
+			<div class="type1"></div>
+			<p>90.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Nokian</h1>
+			<h2>Hakkapeliitta R</h2>
+			<div class="type2"></div>
+			<p>115.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Hankook</h1>
+			<h2>K 708 155/65 R14</h2>
+			<div class="type3"></div>
+			<p>393.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Goodyear</h1>
+			<h2>Ultra Grip Extreme</h2>
+			<div class="type1"></div>
+			<p>90.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Nokian</h1>
+			<h2>Hakkapeliitta R</h2>
+			<div class="type2"></div>
+			<p>115.00 грн.</p>
+		</div>
+		<div class="product">
+			<h1>Hankook</h1>
+			<h2>K 708 155/65 R14</h2>
+			<div class="type3"></div>
+			<p>393.00 грн.</p>
+		</div>
 		
 	</div>
-	<div class="byDiscs">
-		
-	</div>
+	<div class="producer"></div>
+</div>
+<div class="brands">
+	<div class="brand"></div>
+	<div class="brand2"></div>
+	<div class="brand3"></div>
+	<div class="brand4"></div>
+	<div class="brand5"></div>
+	<div class="brand6"></div>
+	<div class="brand7"></div>
+	<div class="brand8"></div>
+</div>
 
-
-
+<footer>
+	<ul>
+		<li><a href="#">О компании</a></li>
+		<li><a href="#">Доставка</a></li>
+		<li><a href="#">Статьи</a></li>
+		<li><a href="#">Контакты</a></li>
+	</ul>
+	<p>Создание сайта © Global Vision</p>
+</footer>
 </div>
 </body>
 </html>

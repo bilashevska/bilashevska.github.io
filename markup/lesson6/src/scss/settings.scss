@@ -8,7 +8,7 @@ $height: 33px;
 $button-color: #ff6760;
 
 @mixin padding ($padding) {
-	padding:$padding;
+	padding: $padding;
 	box-sizing: border-box;
 }
 
@@ -16,10 +16,11 @@ $button-color: #ff6760;
 	background: url($path) no-repeat;
 }
 
-body {
-	padding: 17px 45px 0px;
-	min-width: 1000px;
+.wrapper {
+	margin: 0 auto;
+	padding: 17px 45px 0;
+	width: 907px;
 	background-color: $w-color;
-	background-size: cover;
+	border: 1px solid red
+	// background-size: cover;
 }
- 

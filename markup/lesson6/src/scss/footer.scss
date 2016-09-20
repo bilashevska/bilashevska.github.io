@@ -1,0 +1,38 @@
+footer {
+	margin-top: 10px;
+	box-sizing: border-box;
+	padding: 12px 0px 50px;
+	text-align: center;
+	width: 907px;
+	background-color: #213a4d;
+	font-family: Arial;
+	a {
+		display: block;
+		font-size: 12px;
+		line-height: 12px;
+		padding: 0px 11px;		
+		color: #bec6c9;
+		text-decoration: none;		
+		&:hover {
+			color: #52abcb;
+		}
+	}
+
+	li {
+		font-size: 0px;
+		display: inline-block;				
+		list-style: none;
+		border-right: 2px solid #8d989f;
+		&:nth-child(4) {
+			border: none;
+		}
+	}
+	
+	p {
+		margin-top: 16px;
+		color: #7f4740;
+		font-size: 10px;
+	}
+
+
+}

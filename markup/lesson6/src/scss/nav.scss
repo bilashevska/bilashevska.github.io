@@ -4,8 +4,8 @@ nav {
 	width: 907px;
 	height: 32px;
 	//line-height: 32px;
-	padding: 2px 13px 2px 125px;
-	// border: 1px solid #0d1642;
+	padding: 0px 13px 2px 125px;
+	// border: 1px solid #4CFF00;
 	border-radius: 5px;
 	background: linear-gradient(to top, #000000 0%, #576068 100%);
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
@@ -21,6 +21,7 @@ nav {
 				list-style: none;
 				a {
 					display: block;
+					box-sizing: border-box;
 					padding: 0px 17px;
 					line-height: 30px;
 					font-size: 13.64px;			
