@@ -25,20 +25,26 @@ wrapper = {
         li.innerHTML = "Вопрос №" + i;
         ol.appendChild(li);
 
-          for(k = 1; k < 4; k++) {
-            radio_div  = document.createElement('div');
+        li_form = document.createElement('form');
+        li.appendChild(li_form);
 
+
+
+          for(k = 1; k < 4; k++) {
+            radio_label  = document.createElement('label');
+            radio_label.setAttribute('for','quest'+i);
+            radio_label.style.display = 'block';
             radio = document.createElement('input');
-            radio.setAttribute('name', 'quest');
+            radio.setAttribute('name', 'quest'+i);
             radio.setAttribute('type', 'radio');
 
             text = document.createElement ('span');
-            text.innerHTML = ('Ответ' + k);
+            text.innerHTML = ('Ответ №' + k);
 
-            radio_div.appendChild(radio);
-            radio_div.appendChild(text);
+            radio_label.appendChild(radio);
+            radio_label.appendChild(text);
 
-            li.appendChild(radio_div);
+            li_form.appendChild(radio_label);
           }
 
       }
