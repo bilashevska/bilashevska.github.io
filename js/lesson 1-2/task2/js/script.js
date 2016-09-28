@@ -7,6 +7,10 @@ function pullingArray () {
 
   for (var i = 0; i < 5; i++) {
     arr.push(prompt('Введите имя ' + (i + 1) + ' пользователя', ''));
+    while( (arr[i].localeCompare('')==0) ){
+      alert("Поле пустое или заполнено некорректно, попытайтесь ещё!");
+      arr[i]=prompt('Введите имя еще раз', '');
+    }
   }
 
   return arr;
@@ -30,5 +34,9 @@ function logIn(name, arr) {
 
 usersNames = pullingArray();
 userName = prompt('Введите свой логин', '');
+while( (userName.localeCompare('')==0) ) {
+  alert("Поле пустое или заполнено некорректно, попытайтесь ещё!");
+  userName = prompt('Введите имя еще раз', '');
+}
 
 logIn(userName, usersNames);
