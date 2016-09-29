@@ -2,6 +2,7 @@ var parentElem = document.body;
 
 var wrapper = document.createElement('div');
 var h1 = document.createElement('h1');
+var form = document.createElement('form');
 var ol = document.createElement('ol');
 
 var li;
@@ -9,51 +10,52 @@ var radio;
 var button;
 
 parentElem.appendChild(wrapper);
+wrapper.appendChild(form);
 
 wrapper = {
 
   make_h1: function () {
     h1.innerHTML = "Тест по программированию";
-    parentElem.appendChild(h1);
+    form.appendChild(h1);
     },
 
     make_list: function ( n ) {
-      parentElem.appendChild(ol);
+      form.appendChild(ol);
 
       for( i= 1; i < n+1; i++) {
         li = document.createElement('li');
         li.innerHTML = "Вопрос №" + i;
         ol.appendChild(li);
 
-        li_form = document.createElement('form');
-        li.appendChild(li_form);
+        li_div = document.createElement('div');
+        li.appendChild(li_div);
 
+        for(k = 1; k < 4; k++) {
 
+          radio_label  = document.createElement('label');
+          radio_label.setAttribute('for','quest'+i);
+          radio_label.style.display = 'block';
 
-          for(k = 1; k < 4; k++) {
-            radio_label  = document.createElement('label');
-            radio_label.setAttribute('for','quest'+i);
-            radio_label.style.display = 'block';
-            radio = document.createElement('input');
-            radio.setAttribute('name', 'quest'+i);
-            radio.setAttribute('type', 'radio');
+          radio = document.createElement('input');
+          radio.setAttribute('name', 'quest'+i);
+          radio.setAttribute('type', 'radio');
 
-            text = document.createElement ('span');
-            text.innerHTML = ('Ответ №' + k);
+          text = document.createElement ('span');
+          text.innerHTML = ('Ответ №' + k);
 
-            radio_label.appendChild(radio);
-            radio_label.appendChild(text);
+          radio_label.appendChild(radio);
+          radio_label.appendChild(text);
 
-            li_form.appendChild(radio_label);
-          }
+          li_div.appendChild(radio_label);
 
+        }
       }
     },
 
   make_submit: function () {
     button = document.createElement('button');
     button.innerHTML = "Проверить мои результаты";
-    parentElem.appendChild(button);
+    form.appendChild(button);
   }
 
 };
