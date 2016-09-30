@@ -33,7 +33,6 @@ wrapper = {
         for(k = 1; k < 4; k++) {
 
           radio_label  = document.createElement('label');
-          radio_label.setAttribute('for','quest'+i);
           radio_label.style.display = 'block';
 
           radio = document.createElement('input');
