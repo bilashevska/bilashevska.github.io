@@ -1,0 +1,72 @@
+@font-face {
+		font-family: 'drugs'; /* Имя шрифта */
+		src: url( "../fonts/Drugs.otf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+		font-family: 'intro'; /* Имя шрифта */
+		src: url( "../fonts/Intro.otf"); /* Путь к файлу со шрифтом */
+}
+
+body>div {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  border: 6px double #04756F;
+  font-family: 'drugs';
+}
+
+h1 {
+  margin: 0 auto 10px;
+  font-size: 20px;
+  font-family: 'intro';
+  color: #FF2D00;
+}
+
+ol {
+  margin: auto;
+  box-sizing: border-box;
+  list-style-type: decimal;
+}
+
+li {
+  margin: 15px;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: 900;
+}
+
+li > div {
+  margin-top: 10px;
+}
+
+button {
+  margin: 40px auto 0;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 200px;
+  border: none;
+  line-height: 20px;
+  font-size: 13px;
+  background-color: #FF8C00;
+  font-family: 'drugs';
+  font-weight: 900;
+  color: #fff;
+}
+
+button:hover {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px outset #04ECE6;
+  cursor: pointer;
+}
+
+

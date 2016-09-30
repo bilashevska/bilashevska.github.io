@@ -57,7 +57,6 @@ wrapper = {
     button.innerHTML = "Проверить мои результаты";
     form.appendChild(button);
   }
-
 };
 
 wrapper.make_h1();
