@@ -20,14 +20,6 @@ start.onclick  = function () {
     timer_s,
     timer_m;
 
-
-  timer_ms = setInterval(function () {
-    msTime.innerHTML = ms++;
-    if(ms == 999){
-      ms = 1;
-    }
-  }, 1)
-
   timerId  = setInterval(function() {
     msTime.innerHTML = ms++;
 
