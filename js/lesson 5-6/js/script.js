@@ -3,8 +3,8 @@
  */
 var hours = document.querySelector('.hours'),
   minutes = document.querySelector('.minutes')
-  time = document.querySelector('.seconds'),
-  msTime = document.querySelector('.milliseconds'),
+  seconds = document.querySelector('.seconds'),
+  milliseconds = document.querySelector('.milliseconds'),
   start = document.querySelector('.start'),
   finish = document.querySelector('.finish');
 
@@ -12,31 +12,40 @@ var hours = document.querySelector('.hours'),
 
 
 start.onclick  = function () {
-  var ms = 1,
+  var ms = 0,
     s = 1,
     m = 1,
-    h = 1,
-    timer_ms,
-    timer_s,
-    timer_m;
+    h = 1;
 
-  timerId  = setInterval(function() {
-    msTime.innerHTML = ms++;
+  start.innerHTML = 'Pause';
 
-    if(ms == 999){
-      ms = 1;
-      time.innerHTML = s++;
+  timerId  = setInterval(function run() {
 
+    milliseconds.innerHTML = ms;
+    ms=ms+4;
+    if(ms == 1000){
+      ms = 0;
+      seconds.innerHTML = s++;
       if(s == 59){
         s = 1;
         m++;
+        minutes.innerHTML = s++;
         if(m == 59){
           m = 1;
           h++
+          hours.innerHTML = s++;
         }
       }
     }
-  }, 1);
+
+      start.onclick = function () {
+        clearInterval(timerId);
+        start.onclick = function () {
+          setInterval(run, 4);
+        }
+      }
+
+  }, 4);
 
 
 
