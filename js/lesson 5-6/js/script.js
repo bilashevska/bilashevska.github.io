@@ -61,6 +61,9 @@ function handlerClear() {
 
   start.innerHTML = "START";
 
+  start.style.zIndex = 1;
+  pause.style.zIndex = 0;
+
   start.addEventListener('click', handlerStart);
 
   ms = 0;

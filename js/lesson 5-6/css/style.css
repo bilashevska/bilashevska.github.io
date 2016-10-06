@@ -1,13 +1,20 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 50px;
+}
+
+.image {
+  margin: auto;
+  width: 319px;
+  height: 319px;
+  background: url("../img/bigicon.png");
 }
 
 .timer {
   display: flex;
   justify-content: center;
-  margin: 30px auto 30px;
+  margin: 40px auto 30px;
   width: 320px;
   height: 30px;
   border-bottom: 2px solid #b0e0e6;
