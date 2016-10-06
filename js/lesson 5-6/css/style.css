@@ -1,22 +1,16 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.image {
-  margin: 10px auto;
-  width: 319px;
-  height: 319px;
-  background: url("../img/bigicon.png");
+  margin-top: 150px;
 }
 
 .timer {
   display: flex;
   justify-content: center;
-  margin: 30px auto;
+  margin: 30px auto 30px;
   width: 320px;
   height: 30px;
-  border-bottom: 2px solid powderblue;
+  border-bottom: 2px solid #b0e0e6;
 }
 
 span {
@@ -34,9 +28,10 @@ span {
 }
 
 .buttons {
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  margin: 40px auto;
+  justify-content: space-between;
+  margin: 50px auto;
   width: 400px;
 }
 
@@ -49,4 +44,21 @@ button {
 
 button:hover {
   cursor: pointer;
+  box-shadow: 0px 1px 2px cornflowerblue;
+}
+.start {
+  z-index: 1;
+  background-color: #9dd685;
+}
+
+.pause {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: #faf2f0;
+}
+
+.clear {
+  background-color: #f04f46;
 }

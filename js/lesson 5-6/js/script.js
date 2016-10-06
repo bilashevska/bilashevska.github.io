@@ -32,25 +32,48 @@ function run() {
         }
       }
     }
-  }
+}
 
-start.onclick  = function () {
+function handlerStart() {
   timerId  = setInterval(run, 4);
+
+  start.style.zIndex = 0;
+  pause.style.zIndex = 1;
+
+  start.removeEventListener('click', handlerStart);
+  pause.addEventListener('click', handlerPause);
+}  
+
+function handlerPause() {
+  clearInterval(timerId);
+
+  start.innerHTML = "CONTINUE";
+
+  start.style.zIndex = 1;
+  pause.style.zIndex = 0;
+
+  pause.removeEventListener('click', handlerPause);
+  start.addEventListener('click', handlerStart);
 }
 
-pause.onclick = function () {
+function handlerClear() {
   clearInterval(timerId);
-}
 
-clear.onclick =  function () {
-  clearInterval(timerId);
+  start.innerHTML = "START";
+
+  start.addEventListener('click', handlerStart);
+
   ms = 0;
   s = 1;
   m = 1;
   h = 1;
+
   milliseconds.innerHTML = '0';
   seconds.innerHTML = '0';
   minutes.innerHTML = '0';
   hours.innerHTML = '0';
 }
 
+start.addEventListener('click', handlerStart);
+pause.addEventListener('click', handlerPause);
+clear.addEventListener('click', handlerClear);
