@@ -1,17 +1,17 @@
-/* Tabs */
 .wrapper {
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  margin: 30px;
+  font-family: sans-serif;
 }
 
 .tabs {
   overflow: hidden;
-  border-bottom: 1px solid #ccc;
 }
 
 li {
   float: left;
-  border-left: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
 }
 
 a {
@@ -20,6 +20,8 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #999;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
 a.active,
@@ -31,4 +33,6 @@ a:hover {
   padding: 20px;
   font-size: 16px;
   line-height: 21px;
+  border: 1px solid #ccc;
+  border-radius: 0px  8px 8px;
 }
