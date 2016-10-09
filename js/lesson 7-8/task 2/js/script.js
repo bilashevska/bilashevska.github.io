@@ -18,7 +18,7 @@ $( function() {
 
   })
 
-  $("input").on("focusin", function (e) {
+  $("input").on('mouseenter', function (e) {
 
     e.preventDefault();
 
@@ -30,7 +30,7 @@ $( function() {
 
   })
 
-  $("input").on("focusout", function (e) {
+  $("input").on("mouseleave", function (e) {
 
     e.preventDefault();
 
