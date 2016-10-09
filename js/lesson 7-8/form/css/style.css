@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto;
+  border: 1px solid green;
+}
+
+
+.form {
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 40px auto 30px;
+  width: 400px;
+  height: 30px;
+}
+
+form div {
+  box-sizing: border-box;
+  display: flex;
+  width: 400px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+label {
+  width: 80px;
+}
+
+input {
+  width: 80px;
+  margin: 0 10px;
+}
+div.tooltip {
+  width: 200px;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
