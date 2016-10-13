@@ -8,6 +8,7 @@ $(function(){
   });
 
   tabs.on('click', '.tabs a', function(e){
+
     /* Предотвращаем стандартную обработку клика по ссылке */
     e.preventDefault();
 

@@ -3,6 +3,7 @@
  */
 
 $( function() {
+
   $('button').on('click', function (e) {
 
     e.preventDefault();
@@ -10,10 +11,11 @@ $( function() {
     for (i = 0; i< 3;i++){
 
       $('.tooltip').eq(i).remove();
-      $('<div class="tooltip"></div>').insertAfter($('input').eq(i))
+      $('<div class="tooltip"></div>').insertAfter($('input').eq(i));
       $('.tooltip').eq(i).text($('input').eq(i).attr('data-title'));
 
     }
+
   })
 
   $("input").on('mouseenter', function (e) {
@@ -27,12 +29,14 @@ $( function() {
     $('.tooltip').text($(this).attr('data-title'));
 
   })
+
   $("input").on("mouseleave", function (e) {
 
     e.preventDefault();
 
     $('.tooltip').hide();
     $('.tooltip').remove();
+
   })
 
   // $("input").hover(
