@@ -18,44 +18,45 @@ $( function() {
 
   })
 
-  $("input").on('mouseenter', function (e) {
+  $("input").hover(
+    function (e) {
+      e.preventDefault();
 
-    e.preventDefault();
+      $('.tooltip').hide();
+      $('.tooltip').remove();
 
-    $('.tooltip').hide();
-    $('.tooltip').remove();
+      $('<div class="tooltip"></div>').insertAfter($(this));
+      $('.tooltip').text($(this).attr('data-title'));
+    },
+    function (e) {
+      e.preventDefault();
 
-    $('<div class="tooltip"></div>').insertAfter($(this));
-    $('.tooltip').text($(this).attr('data-title'));
+      $('.tooltip').hide();
+      $('.tooltip').remove();
+    }
+  )
+  //The second type of solving
+    // $("input").on('mouseenter', function (e) {
 
-  })
+    //e.preventDefault();
 
-  $("input").on("mouseleave", function (e) {
-
-    e.preventDefault();
-
-    $('.tooltip').hide();
-    $('.tooltip').remove();
-
-  })
-
-  // $("input").hover(
-  //   function () {
-  //     e.preventDefault();
+  //   $('.tooltip').hide();
+  //   $('.tooltip').remove();
   //
-  //     $('.tooltip').hide();
-  //     $('.tooltip').remove();
+  //   $('<div class="tooltip"></div>').insertAfter($(this));
+  //   $('.tooltip').text($(this).attr('data-title'));
   //
-  //     $('<div class="tooltip"></div>').insertAfter($(this));
-  //     $('.tooltip').text($(this).attr('data-title'));
-  //   },
-  //   function () {
-  //     e.preventDefault();
+  // })
+
+  // $("input").on("mouseleave", function (e) {
   //
-  //     $('.tooltip').hide();
-  //     $('.tooltip').remove();
-  //   }
-  // )
+  //   e.preventDefault();
+  //
+  //   $('.tooltip').hide();
+  //   $('.tooltip').remove();
+  //
+  // })
+
 
   })
 
