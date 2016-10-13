@@ -1,28 +1,52 @@
 .wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 30px;
   font-family: sans-serif;
 }
 
-.tabs {
-  overflow: hidden;
+h1 {
+  font-size: 36px;
+  text-align: center;
+  font-family: "Futura Bk BT";
+  color: #000;
 }
 
-li {
-  float: left;
-  border: 1px solid #ccc;
+.tabs {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  bottom: -2px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 30px auto 0px;
+}
+
+li{
+  box-sizing: border-box;
+  margin-right: 0;
+  border: 2px solid #ccc;
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
-  background-color: rgba(69, 178, 157, 0.19);
+}
+
+li:nth-child(2){
+  margin: 0 -2px;
 }
 
 a {
   display: block;
+  position: relative;
+  box-sizing: border-box;
   padding: 8px 16px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 2px solid #ccc;
   font-size: 18px;
   line-height: 21px;
   color: #999;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Futura Bk BT";
+  background-color: #c7f5fc;
 }
 
 a.active,
@@ -30,12 +54,54 @@ a:hover {
   color: #000;
 }
 
-.tabs-content {
-  padding: 20px;
-  font-size: 16px;
-  line-height: 21px;
-  border-radius: 0px  8px 8px;
-  background-color: rgba(69, 178, 157, 0.19);
+a.active  {
+  background-color: #c2e4ff;
+  border-bottom-color: #c4e5ff;
+}
 
+.tabs-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 20px;
+  width: 800px;
+  border: 2px solid #ccc;
+  border-radius: 0px  8px 8px;
+  background-color: rgb(196, 229, 255);
+}
+
+h2 {
+  margin: 10px;
+  font-size: 24px;
+  text-align: center;
+  font-family: Garamond;
+}
+
+.img {
+  margin: 15px auto ;
+}
+
+.ages {
+  width: 500px;
+  height: 500px;
+  background: url("../img/threeAges.jpg");
+  background-size: cover;
+}
+
+.adele {
+  width: 500px;
+  height: 500px;
+  background: url("../img/Adele-Bloch-Bauers-Portrait.jpg");
+  background-size: cover;
+}
+.kiss {
+  width: 500px;
+  height: 500px;
+  background: url("../img/theKiss.jpg");
+  background-size: cover;
 }
 

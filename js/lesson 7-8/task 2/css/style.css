@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 450px;
   margin: 50px auto;
-  /*border: 1px solid green;*/
+  width: 450px;
 }
 
-form {  justify-content: center;
+form {
+  justify-content: center;
   box-sizing: border-box;
   margin: 40px auto 30px;
   width: 450px;
@@ -19,7 +19,6 @@ form>div {
   margin: 30px auto;
   box-sizing: border-box;
   width: 450px;
-  /*border: 1px solid red;*/
   line-height: 26px;
 }
 
@@ -55,5 +54,5 @@ button {
   font-family: "Segoe UI Light";
   color: #fff;
   background-color: rgba(60, 179, 113, 1);
-
 }
+

@@ -1,18 +1,3 @@
-/**
- * Created by user on 08.10.2016.
- */
-// $(function ( ) {
-//
-// var links = $(" a");
-//
-//   links.on('click', function (e) {
-//     var $submenu = $(this).siblings('.submenu');
-//
-//     e.preventDefault();
-//     console.log('$submenu', $submenu);
-//     $submenu.slideToggle();
-//   });
-// });
 
 $(function(){
 
@@ -27,13 +12,14 @@ $(function(){
     e.preventDefault();
 
     /* Узнаем значения ID блока, который нужно отобразить */
-    var tabId = $(this).attr('href');
 
     /* Удаляем все классы у якорей и ставим active текущей вкладке */
     $('.tabs a',tabs).removeClass();
+    var tabId = $(this).attr('href');
+
     $(this).addClass('active');
 
-    /* Прячем содержимое всех вкладок и отображаем содержимое нажатой */
+     /* Прячем содержимое всех вкладок и отображаем содержимое нажатой */
     $('.tabs-content > div', tabs).hide(0);
     $(tabId).show();
   });
