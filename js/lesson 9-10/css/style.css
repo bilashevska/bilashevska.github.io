@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-wrapper {
+  margin: 18px auto;
+}
+
+select {
+  width: 200px;
+  font-family: "Segoe UI Light";
+}
+
+.check-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px auto;
+  height: 60px;
+}
+
+
+.check-box-wrapper_css {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px auto;
+  height: 60px;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label {
+  cursor: pointer;
+  font-family: "Segoe UI Light";
+}
+
+label:after {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #8bbbc1;
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+  background: #8BBBC1 url("../img/line.png") -12px  no-repeat;
+}
