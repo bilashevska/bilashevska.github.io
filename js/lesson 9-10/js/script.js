@@ -38,4 +38,28 @@ $(function() {
       $(this).removeClass('active');
     })
     .jcarouselPagination();
-})
+
+  $( '.dropdown' ).hover(
+    function(){
+      $(this).children('.sub-menu').slideDown(200);
+    },
+    function(){
+      $(this).children('.sub-menu').slideUp(200);
+    }
+  )
+
+  var $links = $('.self-menu a');
+
+  $links.on('click', function (e) {
+    var $submenu = $(this).siblings('.self-sub-menu');
+    var left = $(this).position();
+    $('.self-sub-menu').hide();
+
+    e.preventDefault();
+    // $submenu.css('left','15px');
+    $submenu.slideToggle();
+
+    }
+  )
+}
+)

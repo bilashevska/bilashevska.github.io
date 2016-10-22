@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .select-wrapper {
@@ -51,4 +52,50 @@ label:after {
 }
 input[type=checkbox]:checked + label:after {
   background: #8BBBC1 url("../img/line.png") -12px  no-repeat;
+}
+
+.menu-wrapper {
+  margin: 30px auto;
+  width: 600px;
+  height: 400px;
+}
+
+.self-menu-wrapper {
+  margin: 30px auto;
+  width: 250px;
+}
+
+.self-menu {
+  display: flex;
+  position: relative;
+}
+
+.self-menu li {
+  list-style: none;
+}
+
+.self-menu a {
+  display: block;
+  box-sizing: border-box;
+  padding: 0px 5px;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #3875d7;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.self-sub-menu {
+  display: none;
+  position: absolute;
+  left: 15px;
+}
+
+.self-sub-menu a {
+  display: block;
+  box-sizing: border-box;
+  font-size: 12px;
+  left: 20px;
+  width: 150px;
 }
