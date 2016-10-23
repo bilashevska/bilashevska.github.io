@@ -43,12 +43,12 @@ label {
 label:after {
   content: " ";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #8bbbc1;
   position: relative;
   top: 3px;
   margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  background: #8bbbc1;
 }
 input[type=checkbox]:checked + label:after {
   background: #8BBBC1 url("../img/line.png") -12px  no-repeat;
@@ -62,7 +62,8 @@ input[type=checkbox]:checked + label:after {
 
 .self-menu-wrapper {
   margin: 30px auto;
-  width: 250px;
+  width: 300px;
+  height: 500px;
 }
 
 .self-menu {
@@ -72,30 +73,51 @@ input[type=checkbox]:checked + label:after {
 
 .self-menu li {
   list-style: none;
+  height: 40px;
 }
 
 .self-menu a {
   display: block;
   box-sizing: border-box;
   padding: 0px 5px;
-  width: 80px;
-  height: 40px;
-  border: 2px solid #3875d7;
+  width: 100px;
   line-height: 40px;
-  font-size: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Segoe UI Light";
   text-decoration: none;
+  background-color: #9c9cdd;
+  color: #fff;
+  transition: background-color .45s;
+}
+
+.self-menu>li>a:hover {
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.self-menu a:focus{
+  background-color: #776ea7;
 }
 
 .self-sub-menu {
   display: none;
   position: absolute;
-  left: 15px;
 }
-
+.self-sub-menu li{
+  margin-top: 1px;
+}
 .self-sub-menu a {
   display: block;
   box-sizing: border-box;
-  font-size: 12px;
-  left: 20px;
+  font-size: 14px;
   width: 150px;
+  color: #fff;
+  text-align: left;
 }
+
+.self-sub-menu a:hover {
+  padding-left: 10px;
+  background: #f4c7ee;
+}
+
+
+

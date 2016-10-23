@@ -2,10 +2,13 @@
  * Created by user on 20.10.2016.
  */
 $(function() {
+
   $('.jquery').iCheck({
     checkboxClass: 'icheckbox_square-aero',
   });
   $(".basic-single").select2();
+
+
   $('.jcarousel').jcarousel();
 
   $('.jcarousel-control-prev')
@@ -39,6 +42,8 @@ $(function() {
     })
     .jcarouselPagination();
 
+
+
   $( '.dropdown' ).hover(
     function(){
       $(this).children('.sub-menu').slideDown(200);
@@ -48,15 +53,18 @@ $(function() {
     }
   )
 
+
+
   var $links = $('.self-menu a');
 
   $links.on('click', function (e) {
     var $submenu = $(this).siblings('.self-sub-menu');
-    var left = $(this).position();
+    var left = parseInt($(this).position().left + 15);
+
     $('.self-sub-menu').hide();
 
     e.preventDefault();
-    // $submenu.css('left','15px');
+    $submenu.css('left',left+'px');
     $submenu.slideToggle();
 
     }
