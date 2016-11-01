@@ -1,50 +1,52 @@
 .brands {
-	margin-top: 20px;
-	text-align: center;
-	.brand {
-		display: inline-block;
-		vertical-align: top;
-		min-width: 60px;
-		min-height: 15px;
-		margin-right: 20px;
-		content: url("../img/brand8.png") ;
-	}
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px auto 0px;
+  text-align: center;
 
-	.brand2 {
-		@extend .brand;
-		content: url("../img/brand7.png");
-	}
+  .brand {
+    min-width: 60px;
+    min-height: 15px;
+    content: url("../img/brand8.png") ;
+  }
 
-	.brand3 {
-		@extend .brand;
-		content: url("../img/brand6.png");
-	}
+  .brand2 {
+    @extend .brand;
+	content: url("../img/brand7.png");
+  }
 
-	.brand4 {
-		@extend .brand;
-		content: url("../img/brand5.png");
-	}
+  .brand3 {
+	@extend .brand;
+	content: url("../img/brand2.png");
+  }
 
-	.brand5 {
-		@extend .brand;
-		content: url("../img/brand4.png");
-	}
+  .brand4 {
+    @extend .brand;
+    content: url("../img/brand4.png");
+  }
 
-	.brand6 {
-		@extend .brand;
-		content: url("../img/brand3.png");
-	}
+  .brand5 {
+    @extend .brand;
+    content: url("../img/brand5.png");
+  }
 
-	.brand7 {
-		@extend .brand;
-		content: url("../img/brand2.png");
-	}
+  .brand6 {
+    @extend .brand;
+    content: url("../img/brand6.png");
+  }
 
-	.brand8 {
-		@extend .brand;
-		content: url("../img/brand1.png");
-	}
-	div:last-child {
-		margin: 0px;
-	}	
+  .brand7 {
+    @extend .brand;
+    content: url("../img/brand3.png");
+  }
+
+  .brand8 {
+    @extend .brand;
+    content: url("../img/brand1.png");
+  }
+
+  div:last-child {
+    margin: 0px;
+  }
 }

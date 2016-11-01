@@ -1,49 +1,57 @@
 nav {
-	margin-top: 6px;
-	box-sizing: border-box;
-	width: 907px;
-	height: 32px;
-	//line-height: 32px;
-	padding: 0px 13px 2px 125px;
-	// border: 1px solid #4CFF00;
-	border-radius: 5px;
-	background: linear-gradient(to top, #000000 0%, #576068 100%);
-	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
-	
-	div {
-		display: inline-block;
-	}
-		.menu {
-			//display: inline-block;
-			vertical-align: bottom;			
-			li {
-				display: inline-block;				
-				list-style: none;
-				a {
-					display: block;
-					box-sizing: border-box;
-					padding: 0px 17px;
-					line-height: 30px;
-					font-size: 13.64px;			
-					text-decoration: none;
-					font-family: Lucida, sans-serif;
-					color: #b1bcc0;
-					&:hover {
-						border-radius: 25px;
-						background: linear-gradient(to top, #206988 0%, #114165 59%, #0c3256 100%)
-					}								
-				}		
-			}
-		}
-		.cart {
-			line-height: 32px;
-			font-size: 11px;
-			font-family: Lucida, sans-serif;
-			color: #fff;
-			a {
-				margin-right: 5px; 
-				color: #0d5a8f;
-			}
-		}
-	}
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  box-sizing: border-box;
+  width: 911px;
+  height: 34px;
+  padding: 0px 13px 0px 127px;
+  border-radius: 5px;
+  background: linear-gradient(to top, #000000 0%, #576068 100%);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+
+  .menu {
+    padding: 3px 0px 0px;
+    vertical-align: bottom;
+
+    li {
+      display: inline-block;
+      margin-right: 5px;
+      height: 28px;
+      list-style: none;
+
+      li:last-child {
+        margin-right: 0px;
+      }
+
+      a {
+        display: block;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 13.64px;
+        text-decoration: none;
+        font-family: Lucida, sans-serif;
+        color: #b1bcc0;
+
+        &:hover {
+          box-sizing: border-box;
+          border-radius: 25px;
+          background: linear-gradient(to top, #206988 0%, #114165 59%, #0c3256 100%)
+        }
+      }
+    }
+  }
+  .cart {
+    line-height: 28px;
+    font-size: 11px;
+    font-family: Lucida, sans-serif;
+    color: #fff;
+    a {
+      margin-right: 2px;
+      color: #0d5a8f;
+    }
+  }
+}
 	

@@ -1,64 +1,59 @@
 .by-auto {
-	position: relative;
-	width: 410px;
-	padding: 5px  10px 5px 15px;
-	vertical-align: top;
-	>div {
-		vertical-align: top;
-		width: 175px;
-		display: inline-block;
-		// outline: 1px solid red;
-		div {
-			vertical-align: top;
-			outline: 1px solid blue;
-		}
-	}
+  position: relative;
+  margin-right: 14px;
+  width: 415px;
+  vertical-align: top;
 
-	h1 {
-		position: absolute;
-		top: 5px;
-		left: 30%;
-		font-family: 'Arial Black';
-		font-size: 12px;
-		color: #154468;
-	}
-	h2 {
-		font-family: 'Arial Black';
-		font-size: 10px;
-		color: #154468;
-		margin-bottom: 5px;
-	}
+  h1 {
+    position: absolute;
+    top: .5px;
+    left: 30.5%;
+    letter-spacing: .2px;
+    word-spacing: 1.45px;
+  }
 
-	.disks {
-		h2 {
-			text-align: left;
-		}
-	}
+  .search-form-wrapper {
+    margin: 4px 10px 0px 15px;
+  }
+  .search-form-wrapper > div:last-child{
+    margin-left: 21px;
+  }
 
-	.tires {
-		float: right;		
-		h2 {
-			text-align: right;
-		}		
-	}
-	label {
-		box-sizing: border-box;
-		display: inline-block;
-		width: 70px;
-		// height: 17px;
-		font-family: Arial;
-		font-size: 10px;
-		outline: 1px solid red;
-	}
-	span {
-		font-family: Arial;
-		font-size: 9px;
-		color: #77858b;
-	}
-	
-	select {
-		width: 100px;
-		height: 17px;
-		outline: 1px solid red;
-	}
+  h2 {
+    margin-bottom: 6px;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+
+  .container {
+    margin-left: 2px;
+    margin-bottom: 5px;
+    height: 17px;
+    line-height: 7px;
+  }
+
+  p {
+    width: 71px;
+  }
+
+  .right {
+    margin-top: -2px;
+    margin-right: 10px;
+  }
+
+  select {
+    width: 104px;
+    margin: 0px 0px 0px 2px;
+  }
+
+  .year {
+    select {
+      width: 60px;
+    }
+  }
+
+  a {
+    margin-top: 1px;
+    margin-right: 20px;}
 }
+

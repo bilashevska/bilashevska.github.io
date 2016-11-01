@@ -1,22 +1,78 @@
 .search-form {
-  margin: 10px 6px 14px; 
-  }
- .by-auto, .by-tires, .by-disks {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-right: 18px;    
-    height: 132px;
-    width: 250px;
-    border-radius: 15px;
-    border: 1px solid #9c9c9d;
-    box-shadow: 5px 5px 5px rgba(104, 104, 104, .75);
+  display: flex;
+  margin: 10px auto 14px;
+  padding: 2px 0px 0px 5px;
+  width: 914px;
 
-    a {
-    margin-top: 10px;
-    display: block;
-    text-align: right;
+  p {
+    display: inline-block;
+    font-size: 10px;
+    font-family: Arial;
+    white-space: pre-wrap;
+  }
+
+  p span {
+    font-size: 8px;
+    font-family: Arial;
+    color: #77858b;
+  }
+
+  select {
+    box-sizing: border-box;
+    height: 17px;
+    border-bottom: none ;
+    border-top-width: 2px;
+    -webkit-appearance: none;
+    background-image: url('../img/strilka.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    font-size: 11px;
+    font-family: Arial;
+    line-height: 1em;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    outline: none;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  a {
+    float: right;
+    margin-top: 3px;
+    margin-right: 24px;
     font-size: 14px;
     font-family: Arial;
     font-style: italic;
   }
-  }
+ }
+
+.by-auto,
+ .by-tires,
+ .by-disks {
+   box-sizing: border-box;
+   height: 136px;
+   border: 1px solid #9c9c9d;
+   border-radius: 15px;
+   box-shadow: 5px 5px 5px rgba(104, 104, 104, .75);
+
+   h1, h2 {
+     font-size: 12px;
+     color: #114165;
+     font-family:"Arial Black";
+   }
+}
+
+.search-form-wrapper {
+  display: flex;
+}
+
+.right {
+ text-align: right;
+}

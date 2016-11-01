@@ -1,6 +1,69 @@
 .by-tires {
-	padding: 5px;
-	input {
-		display: block;
-	}
+  margin-right: 11px;
+  padding-top: 2px;
+  padding-left: 10px;
+  width: 193px;
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-left: 3px;
+    min-width: 40px;
+    vertical-align: bottom;
+  }
+
+  .container {
+    margin-bottom: 5px;
+
+    select {
+      margin: -1px 1px;
+      width: 55px;
+    }
+  }
+
+  .right + select {
+    width: 46px;
+    margin: 0px 1px;
+  }
+
+  a {
+    margin-top: -4px;
+    margin-right: 18px ;
+  }
 }
+  .season {
+    margin-top: 8px;
+    p {
+      vertical-align: top;
+    }
+
+    label {
+      margin-left:-6px;
+      font-size: 12px;
+      vertical-align: top;
+      font-family: "Lucida Sans Unicode";
+    }
+
+    > div {
+      display: inline-block;
+
+    }
+
+    div  {
+      margin-top: -1px;
+      margin-left: -1.5px;
+      margin-bottom: 3px;
+      height: 12px;
+      line-height: 15px;
+    }
+
+    input {
+      box-sizing: border-box;
+      width: 12px;
+      height: 12px;
+      outline: none;
+    }
+
+  }
