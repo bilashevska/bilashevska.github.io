@@ -8,22 +8,20 @@ $height: 33px;
 $button-color: #ff6760;
 
 @mixin padding ($padding) {
-	padding: $padding;
-	box-sizing: border-box;
+  padding: $padding;
+  box-sizing: border-box;
 }
 
 @mixin img-path($path) {
-	background: url($path) no-repeat;
+  background: url($path) no-repeat;
 }
 
 .wrapper {
-	display: flex;
-	margin: 0 auto;
-	flex-direction: column;
-	padding: 18px 45px 0;
-	box-sizing: border-box;
-	width: 1000px;
-	background-color: $w-color;
-	//border: 1px solid red
-	// background-size: cover;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 18px 45px 0;
+  box-sizing: border-box;
+  width: 1000px;
+  background-color: $w-color;
 }

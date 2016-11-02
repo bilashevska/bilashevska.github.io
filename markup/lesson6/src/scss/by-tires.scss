@@ -33,37 +33,43 @@
     margin-right: 18px ;
   }
 }
-  .season {
-    margin-top: 8px;
-    p {
-      vertical-align: top;
-    }
 
-    label {
-      margin-left:-6px;
-      font-size: 12px;
-      vertical-align: top;
-      font-family: "Lucida Sans Unicode";
-    }
+.season {
+  margin-top: 8px;
 
-    > div {
-      display: inline-block;
-
-    }
-
-    div  {
-      margin-top: -1px;
-      margin-left: -1.5px;
-      margin-bottom: 3px;
-      height: 12px;
-      line-height: 15px;
-    }
-
-    input {
-      box-sizing: border-box;
-      width: 12px;
-      height: 12px;
-      outline: none;
-    }
-
+  p {
+    vertical-align: top;
   }
+
+  label {
+    margin-left:-6px;
+    font-size: 12px;
+    vertical-align: top;
+    font-family: "Lucida Sans Unicode";
+    animation: text-decoration .4s;
+  }
+
+  > div {
+    display: inline-block;
+  }
+
+  div {
+    margin-top: -1px;
+    margin-left: -1.5px;
+    margin-bottom: 3px;
+    height: 12px;
+    line-height: 15px;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    outline: none;
+
+    &:checked+label {
+      text-decoration: underline;
+    }
+    }
+
+}

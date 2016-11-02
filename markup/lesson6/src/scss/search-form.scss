@@ -37,6 +37,10 @@
     -ms-appearance: none;
     appearance: none!important;
     outline: none;
+    transition: background .5s;
+    &:focus {
+      background-image: url('../img/strilka-r.png');
+    }
   }
 
   select::-ms-expand {
@@ -50,12 +54,17 @@
     font-size: 14px;
     font-family: Arial;
     font-style: italic;
+    color: #0c3256 ;
+    transition: .4s;
+    &:hover {
+      color: black;
+    }
   }
  }
 
 .by-auto,
- .by-tires,
- .by-disks {
+  .by-tires,
+  .by-disks {
    box-sizing: border-box;
    height: 134px;
    border: 1px solid #9c9c9d;

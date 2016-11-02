@@ -34,6 +34,7 @@ nav {
         text-decoration: none;
         font-family: Lucida, sans-serif;
         color: #b1bcc0;
+        transition: border-radius .6s;
 
         &:hover {
           box-sizing: border-box;
@@ -43,11 +44,13 @@ nav {
       }
     }
   }
+
   .cart {
     line-height: 28px;
     font-size: 11px;
     font-family: Lucida, sans-serif;
     color: #fff;
+
     a {
       margin-right: 2px;
       color: #0d5a8f;
