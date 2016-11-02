@@ -1,25 +1,27 @@
 .by-disks {
-  padding: 2px 7px;
   width: 265px;
 
   h1 {
-    margin-bottom: 6px;
+
+    margin-left: 6px;
+    margin-bottom: 5px;
     letter-spacing: 1px;
   }
 
   .container {
-    margin-left: 7.5px;
-    margin-bottom: 8px;
+    margin-left: 14px;
+    margin-bottom: 5px;
+    width: 160px;
     line-height: 12px;
-
+    vertical-align: top;
     select {
-      width: 55px;
-      vertical-align: bottom;
+      padding-left: 3px;
+      width: 51px;
+
     }
   }
 
   p {
-    margin-top: -6px;
     width: 87px;
     letter-spacing: 1px;
     line-height: 8px;
@@ -33,34 +35,61 @@
 
   }
 
-  .container:last-child {
-    span {
-      line-height: 10px;;
-    }
 
-    select {
-      margin-bottom: 6px;
-      width: 60px;
-    }
-  }
 
-  .search-form-wrapper>div:first-child{
-    padding-right: 9px;
+  .disks-part1 {
+    margin-top: 1px;
     border-right: 1px solid #9c9c9d;
+    .container:first-child {
+      outline:2px solid greenyellow;
+      select {
+        outline: auto;
+        width: 68px;
+      }
+    }
+    .container:last-child {
+      p span {
+        margin-top: -3px;
+        line-height: 10px;
+      }
+      select {
+        width: 60px;
+        line-height: 40px;
+      }
+    }
   }
 
-  .search-form-wrapper>div:last-child{
-    padding-left: 7px;
-    padding-top: 15px;
-    width: 63px;
-    span {
+  .disks-part2 {
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 9px;
+    padding-right: 15px;
+
+    p {
+      margin-bottom: 4px;
+      width: 70px;
+      line-height: 8px;
+    }
+    p span {
       font-size: 8px;
+      letter-spacing: .2px;
+      line-height: 2px;
+      word-spacing: 1px;
+      white-space: pre-wrap;
     }
 
     select {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      margin-left: 2px;
+      padding-left: 1px;
       width: 60px;
     }
-  }
+
 
   }
+
+  a {
+    margin-top: -7px;
+    margin-right: 17px ;
+  }
+}

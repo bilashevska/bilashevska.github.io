@@ -2,8 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
+  padding: 16px 22px 2px;
   box-sizing: border-box;
   width: 526px;
   text-align: center;
@@ -12,6 +11,7 @@
 
 .product {
   text-align: center;
+
   &:nth-child(3n) {
     margin:0px 0px 20px 0px;
 }
@@ -29,19 +29,26 @@
   }
 
   p {
-    margin-top: 7px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-bottom: 6.5px;
     font-size: 16px;
+    word-spacing: 2px;
     font-family: Arial;
     font-style: italic;
     font-weight: bold;
     color: #206988;
+
+    span {
+      font-size: 12px;
+    }
   }
 }
 
 .type1 {
   box-sizing: border-box;
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 129px;
   border: 1px solid #a4aeb1;
   border-radius: 9px;
   background: #fff url("../img/1.png") center center no-repeat;
@@ -49,6 +56,8 @@
 
 .type2 {
   @extend .type1;
+  margin-left: 27px;
+  margin-right: 28px;
   background: #fff url("../img/2.png") center center no-repeat;
 }
 

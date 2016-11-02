@@ -1,18 +1,20 @@
 .brands {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  margin: 40px auto 0px;
+  margin: 43px 0px 0px 119px;
   text-align: center;
 
   .brand {
-    min-width: 60px;
+    margin-right: 10px;
+    min-width: 40px;
     min-height: 15px;
     content: url("../img/brand8.png") ;
   }
 
   .brand2 {
     @extend .brand;
+    width: 98px;
+    margin-right: 12px;
 	content: url("../img/brand7.png");
   }
 
@@ -23,26 +25,38 @@
 
   .brand4 {
     @extend .brand;
+    margin-left: 5px;
+    margin-right: 12px;
     content: url("../img/brand4.png");
   }
 
   .brand5 {
     @extend .brand;
+    margin-top: 1px;
+    margin-right: 13px;
+    width: 76px;
     content: url("../img/brand5.png");
   }
 
   .brand6 {
     @extend .brand;
+    margin-right: 14px;
+    height: 24px;
+    width: 58px;
     content: url("../img/brand6.png");
   }
 
   .brand7 {
     @extend .brand;
+    width: 62px;
+    margin-right: 13px;
     content: url("../img/brand3.png");
   }
 
   .brand8 {
     @extend .brand;
+    width: 73px;
+    margin-right: 12px;
     content: url("../img/brand1.png");
   }
 

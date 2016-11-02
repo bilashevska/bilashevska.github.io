@@ -1,20 +1,24 @@
 footer {
-  margin-top: 10px;
-  padding: 12px 0px 50px;
+  margin-top: 24px;
+  padding: 9px 3px 50px 310px;
   box-sizing: border-box;
-  width: 907px;
-  text-align: center;
+  width: 910px;
   background-color: #213a4d;
   font-family: Arial;
 
   a {
     display: block;
-    padding: 0px 11px;
     font-size: 12px;
     line-height: 12px;
     color: #bec6c9;
     text-decoration: none;
-
+    &:after {
+      content: '|';
+      margin-left: 13px;
+      margin-right: 7px;
+      font-size: 14px;
+      color: #8d989f;
+    }
     &:hover {
       color: #52abcb;
     }
@@ -24,15 +28,18 @@ footer {
     font-size: 0px;
     display: inline-block;
     list-style: none;
-	border-right: 2px solid #8d989f;
-
     &:nth-child(4) {
-      border: none;
+      a:after {
+        content: '';
+      }
 	}
+
+
   }
 	
   p {
-	margin-top: 16px;
+	margin-top: 15px;
+    margin-left: 70px;
 	color: #7f4740;
 	font-size: 10px;
   }
