@@ -37,9 +37,9 @@
     -ms-appearance: none;
     appearance: none!important;
     outline: none;
-    transition: background .5s;
+
     &:focus {
-      background-image: url('../img/strilka-r.png');
+      animation: selection .4s 1 forwards;
     }
   }
 

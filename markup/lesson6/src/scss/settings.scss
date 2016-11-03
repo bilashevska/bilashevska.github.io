@@ -16,6 +16,52 @@ $button-color: #ff6760;
   background: url($path) no-repeat;
 }
 
+@keyframes shadow {
+  from {text-shadow: 0 0 3px blue;}
+  50% {text-shadow: 0 0 30px blue;}
+  to {color: #879195;}
+}
+
+@keyframes shadowCart {
+  from {text-shadow: 0 0 3px #000;}
+  50% {text-shadow: 0 0 1px #000;}
+  to {color: #0e85c9;}
+}
+
+@keyframes catalogueList {
+  from {
+    font-family: "Arial";
+    font-style: italic;
+  }
+
+  25%{
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: bolder;
+    }
+
+  50%{
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  75%{
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  to {
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
+
 .wrapper {
   display: flex;
   margin: 0 auto;

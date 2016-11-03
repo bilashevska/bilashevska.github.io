@@ -1,11 +1,10 @@
 nav {
   display: flex;
-  justify-content: space-between;
   margin-top: 6px;
   box-sizing: border-box;
   width: 911px;
   height: 34px;
-  padding: 0px 13px 0px 127px;
+  padding: 0px 0px 0px 127px;
   border-radius: 5px;
   background: linear-gradient(to top, #000000 0%, #576068 100%);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
@@ -16,7 +15,7 @@ nav {
 
     li {
       display: inline-block;
-      margin-right: 5px;
+      margin-right: -15px;
       height: 28px;
       list-style: none;
 
@@ -34,26 +33,52 @@ nav {
         text-decoration: none;
         font-family: Lucida, sans-serif;
         color: #b1bcc0;
-        transition: border-radius .6s;
 
         &:hover {
-          box-sizing: border-box;
-          border-radius: 25px;
-          background: linear-gradient(to top, #206988 0%, #114165 59%, #0c3256 100%)
+          animation: shadow .4s 1 ease-in-out forwards;
         }
       }
     }
   }
 
   .cart {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
     line-height: 28px;
     font-size: 11px;
     font-family: Lucida, sans-serif;
     color: #fff;
 
+    i {
+      margin-right: 10px;
+      padding-top: 6px;
+      transform: scale(-1, 1);
+      font-size: 21px;
+      text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.75);
+    }
+
+    span {
+      font-size: 11px;
+      font-family: Arial;
+    }
+
     a {
-      margin-right: 2px;
+      font-size: 12px;
+      font-family: Arial;
       color: #0d5a8f;
+      text-decoration: none;
+
+      &:hover {
+        animation: shadowCart .3s 1 ease-in-out forwards;
+      }
+    }
+
+    div:last-child {
+      margin-left: 16px;
+      a {
+        margin-left: 10px;
+      }
     }
   }
 }

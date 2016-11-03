@@ -35,11 +35,16 @@
   font-size:14px;
   font-family: "Lucida Sans Unicode";
   color: #114165;
+
+  h1 {
+    margin-top: 1px;
+  }
 }
 
 .circle-border {
   margin: 1px;
-  margin-left: 6px;
+  margin-left: 5px;
+  margin-right: 3px;
   box-sizing: border-box;
   width: 22px;
   height: 22px;
@@ -83,7 +88,7 @@
     font-family: "Lucida Sans Unicode";
     text-decoration: none;
     color: #114165;
-    transition: font-size .35s;
+
   }
 
   a:before {
@@ -101,12 +106,8 @@
   }
 
   a:hover {
+    animation: catalogueList .1s 1 ease-out forwards;
     letter-spacing: 0px;
-    font-family: "Arial";
-    font-weight: bold;
-    font-style: italic;
-    font-size: 14px;
-    text-decoration: underline;
   }
 
   a:hover:before {
@@ -130,7 +131,7 @@
 
     .circle-list {
       margin-left: 2px;
-      margin-right: 5px;
+      margin-right: 6px;
     }
   }
 
@@ -138,10 +139,19 @@
     margin-top: 2px;
     margin-left: 14px;
     width: 138px;
+
+    .circle-border {
+      margin: 0px;
+      margin-top: -2px;
+      margin-left: 4px;
+      margin-right: 5px;
+      width: 22px;
+      height: 22px;
+    }
   }
 
   button {
-    margin-top: 9px;
+    margin-top: 7px;
     margin-left: 24px;
     box-sizing: border-box;
     width: 82px;
@@ -164,7 +174,7 @@
 .producer-body {
   margin-top: 2px;
   margin-left: 25px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 
   p {
     margin-bottom: 2px;
@@ -185,15 +195,15 @@
     input[type="checkbox"] + label span {
       display: inline-block;
       margin-right: 13px;
-      width: 11px;
-      height: 11px;
+      width: 10px;
+      height: 10px;
       vertical-align: middle;
       cursor: pointer;
-      background: url("../img/check.png") 0px -1px no-repeat;
+      background: url("../img/check10.png") 0px -1px no-repeat;
     }
 
     input[type="checkbox"]:checked + label span {
-      background: url("../img/check.png") -28px -1px no-repeat;
+     animation: checkboxes .5s 1 steps(2,end) forwards;
     }
 
     label:hover {
