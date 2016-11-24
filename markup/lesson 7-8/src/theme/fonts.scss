@@ -21,3 +21,21 @@
   src: local('League Gothic Italic'),
   url(fonts/LeagueGothic-Italic.otf) format('otf');
 }
+
+@font-face {
+  font-family: 'Georgia';
+  src: local(Georgia),
+  url(fonts/georgiai.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: local("Open Sans Light"),
+  url(fonts/OpenSans-Light.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Open Sans Extrabold";
+  src: local("Open Sans Extrabold"),
+  url(fonts/OpenSans-Extrabold.ttf) format('ttf');
+}
