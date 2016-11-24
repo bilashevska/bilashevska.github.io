@@ -1,0 +1,111 @@
+& {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: px(100);
+  background-color: #f9f9f9;
+
+  .contentInfo {
+    display: flex;
+  }
+
+  .startsHere {
+    position: relative;
+    box-sizing: border-box;
+    width: px(429);
+    height: px(294);
+    background: url("../images/details/comment.png");
+    background-size: cover;
+
+    .information {
+      padding: px(25)  px(40);
+      box-sizing: border-box;
+      div {
+        position: absolute;
+        top: px(15);
+        left: px(-30);
+        width: px(51);
+        height: px(51);
+        border-radius: 50%;
+        background: url("../images/details/startsIcon.png");
+        background-size: cover;
+      }
+
+    }
+
+    h1 {
+      font-family: "League Gothic";
+      font-size: px(30);
+      color: #454545;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+    }
+
+    span {
+      color: #edbfff;
+    }
+
+    p {
+      margin-top: px(20);
+      width: px(350);
+      text-align: justify;
+      font-family: "Open Sans Light";
+      font-size: px(18);
+      line-height: 13px;
+    }
+  }
+
+  .recentUpdates {
+    margin-left: px(60);
+    &>div {
+      display: flex;
+      align-items: center;
+      margin-bottom: px(25);
+    }
+
+    .avatar {
+      width: px(49);
+      height: px(49);
+      background: url("../images/details/updates1.png");
+      background-size: cover;
+    }
+
+    h1 {
+      font-family: "League Gothic";
+      font-size: px(30);
+    }
+
+    div h1 {
+      font-family: "Open Sans Extrabold";
+      font-size: px(16);
+    }
+
+    div p {
+      font-family: "Open Sans Light";
+      font-size: px(16);
+    }
+
+    a {
+      float: right;
+      font-size: px(18);
+      font-family: "League Gothic";
+      color: #454545;
+      text-decoration: none;
+    }
+  }
+  .contentClients {
+    width: inherit;
+
+    div {
+      margin-top: px(90);
+      padding-top: px(25);
+      padding-bottom: px(30);
+      box-sizing: border-box;
+      width: px(775);
+      background: url("../images/details/logos.png");
+      background-size: cover;
+    }
+  }
+
+
+}

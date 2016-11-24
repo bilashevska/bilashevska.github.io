@@ -1,0 +1,91 @@
+& {
+  .bodySlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: px(160);
+    min-height: px(400);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .buttonLeft {
+    width: px(30);
+    height: px(42);
+    background: url("../images/details/arrowLeft.png");
+    background-size: cover;
+    border: none;
+    outline: none;
+
+    :focus{
+      background: url("../images/details/leftClick.png");
+    }
+  }
+
+  .contentSlider {
+    display: flex;
+    position: relative;
+    margin: 0px px(295);
+    width: px(960);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+    h1 {
+      font-family: "League Gothic";
+      font-size: 60px;
+      color: #fff;
+    }
+
+    h2 {
+      font-family: "League Gothic";
+      font-size: 32px;
+      color: #edbfff;
+    }
+
+    p {
+      margin: 0px;
+      width: px(600);
+      font-family:"Open Sans Light";
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .contentSliderPhone {
+      position: absolute;
+      top: px(-50);
+      right: px(3);
+      width: px(274);
+      height: px(434);
+      background: url("../images/details/iphone.png");
+      background-size: cover;
+    }
+  }
+
+  .buttonRight {
+    width: px(30);
+    height: px(42);
+    border: none;
+    background: url("../images/details/arrowRight.png");
+    background-size: cover;
+    outline: none;
+
+    &:active{
+      background: url("../images/details/rightClick.png");
+      background-size: cover;
+    }
+  }
+
+  .progressSlider {
+    div {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .active {
+      background-color: #fff;
+      border: 3px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+

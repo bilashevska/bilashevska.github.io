@@ -1,0 +1,68 @@
+& {
+  display: flex;
+  justify-content: center;
+  padding: px(75) 0px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #322539 0%, #745083 100%);
+
+  &>div {
+    display: flex;
+    color: #fff;
+    font-family: "League Gothic";
+    text-shadow: 0px 1px 0px #000;
+  }
+
+  h1 {
+    margin-bottom: px(20);
+    font-size: px(30);
+  }
+
+  p {
+    margin-bottom: px(20);
+    font-size: px(16);
+    font-family: "Open Sans Light" ;
+
+  }
+
+  a {
+    font-size: px(18);
+    float: right;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .icon {
+    margin-right: px(25);
+    width: px(33);
+    height: px(33);
+    background-image: url("../images/details/key.png");
+    background-size: cover;
+  }
+
+  .information {
+    width: px(215);
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .blurbs-two {
+    margin-right: px(60);
+    margin-left: px(60);
+
+    .icon {
+      background-image: url("../images/details/speach.png");
+    }
+  }
+
+  .blurbs-three {
+    .icon {
+      background-image: url("../images/details/music.png");
+    }
+
+  }
+}
