@@ -1,1 +1,6 @@
-@import '../mobile';
+@import '../desktop';
+& {
+  .contentSlider {
+    margin: 0px px(30);
+  }
+}
