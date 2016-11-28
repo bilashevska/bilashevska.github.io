@@ -1,41 +1,34 @@
 @font-face {
-  font-family: 'LG';
-  src: local('League Gothic'),
-  url(fonts/LeagueGothic-Regular.otf) format('otf');
+  font-family: "LG";
+  src: url(fonts/LeagueGothic-Regular.otf);
 }
 
 @font-face {
-  font-family: 'LG Condensed';
-  src: local('League Gothic Condensed'),
-  url(fonts/LeagueGothic-CondensedRegular.otf) format('otf');
+  font-family: "LG Condensed";
+  src: url(fonts/LeagueGothic-CondensedRegular.otf);
 }
 
 @font-face {
-  font-family: 'LG Condensed Italic';
-  src: local('League Gothic Condensed Italic'),
-  url(fonts/LeagueGothic-CondensedItalic.otf) format('otf');
+  font-family: "LG Condensed Italic";
+  src: url(fonts/LeagueGothic-CondensedItalic.otf);
 }
 
 @font-face {
-  font-family: 'LG Italic';
-  src: local('League Gothic Italic'),
-  url(fonts/LeagueGothic-Italic.otf) format('otf');
+  font-family: "LG Italic";
+  src: url(fonts/LeagueGothic-Italic.otf);
 }
 
 @font-face {
-  font-family: 'Georgia';
-  src: local(Georgia),
-  url(fonts/georgiai.ttf) format('ttf');
+  font-family: "Georgia";
+  src: url(fonts/georgiai.ttf);
 }
 
 @font-face {
   font-family: "OS Light";
-  src: local("Open Sans Light"),
-  url(fonts/OpenSans-Light.ttf) format('ttf');
+  src: url(fonts/OpenSans-Light.ttf);
 }
 
 @font-face {
   font-family: "OS Extrabold";
-  src: local("Open Sans Extrabold"),
-  url(fonts/OpenSans-ExtraBold.ttf) format('ttf');
+  src: url(fonts/OpenSans-ExtraBold.ttf);
 }

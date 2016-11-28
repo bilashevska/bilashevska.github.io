@@ -1,1 +1,10 @@
 @import '../mobile';
+& {
+
+  .contentSlider {
+    width: px(200);
+  }
+  .contentSliderPhone {
+    display: none;
+  }
+}

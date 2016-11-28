@@ -1,3 +1,47 @@
 & {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: px(90);
+  padding-bottom: px(100);
+  background-color: #ececec;
 
+  &>div {
+    width: px(280);
+  }
+
+  h1 {
+    margin-bottom: px(16);
+    font-family: "LG";
+    font-size: px(30);
+    color: #454545;
+  }
+
+  p {
+    font-family: "OS Light";
+    font-size: px(16);
+    color: #787878;
+  }
+
+  .about {
+    h1 {
+      font-size: px(48);
+
+      span {
+        color: #b9b9b9;
+      }
+    }
+
+    h1 + span {
+      font-family: 'Georgia';
+      font-style: italic;
+      font-size: px(16);
+      color: #c5c5c5;
+    }
+
+    p {
+      margin-top: px(16);
+    }
+  }
 }
