@@ -1,5 +1,5 @@
 & {
-  margin: 30px auto;
+  margin: 70px auto 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   line-height: 24px;
 
   .logo {
-     margin-right: px(170);
+     margin-right: 165px;
 
       a {
         font-size: 48px;
@@ -28,9 +28,14 @@
     -webkit-text-fill-color: transparent;
   }
 
+  nav {
+    box-sizing: border-box;
+  }
+
   li {
+    box-sizing: border-box;
     display: inline-block;
-    margin-right: px(45);
+    margin-right: 50px;
     box-sizing: border-box;
 
     &:last-child {

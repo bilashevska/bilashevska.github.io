@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: px(100);
+  padding-top: 100px;
   background-color: #f9f9f9;
 
   .contentInfo {
@@ -14,20 +14,20 @@
   .startsHere {
     position: relative;
     box-sizing: border-box;
-    width: px(429);
-    height: px(294);
+    width: 429px;
+    height: 294px;
     background: url("../images/details/comment.png");
     background-size: cover;
 
     .information {
-      padding: px(25)  px(40);
+      padding: 25px  40px;
       box-sizing: border-box;
       div {
         position: absolute;
-        top: px(15);
-        left: px(-30);
-        width: px(51);
-        height: px(51);
+        top: 15px;
+        left: -30px;
+        width: 51px;
+        height: 51px;
         border-radius: 50%;
         background: url("../images/details/startsIcon.png");
         background-size: cover;
@@ -37,7 +37,7 @@
 
     h1 {
       font-family: "LG";
-      font-size: px(30);
+      font-size: 30px;
       color: #454545;
       text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
     }
@@ -47,48 +47,73 @@
     }
 
     p {
-      margin-top: px(20);
-      width: px(350);
+      margin-top: 20px;
+      width: 350px;
       text-align: justify;
       font-family: "OS Light";
-      font-size: px(16);
+      font-size: 16px;
       line-height: 13px;
     }
   }
 
+  .informationController {
+    display: flex;
+    margin: 0 auto;
+    div {
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 1px solid #e6e6e6;
+      box-shadow: 1px 2px 0px 0px rgba(255, 255, 255, 1);
+      background-color: #fff;
+    }
+    .active {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 1px solid #454545;
+      background: linear-gradient(180deg, #454545 0%, #6a6a6a 100%);
+    }
+
+  }
+
   .recentUpdates {
-    margin-left: px(60);
+    margin-left: 60px;
     &>div {
       display: flex;
       align-items: center;
-      margin-bottom: px(25);
+      margin-bottom: 25px;
     }
 
     .avatar {
-      width: px(49);
-      height: px(49);
+      width: 49px;
+      height: 49px;
       background: url("../images/details/updates1.png");
       background-size: cover;
     }
 
     h1 {
       font-family: "LG";
-      font-size: px(30);
+      font-size: 30px;
     }
 
     div h1 {
       font-family: "OS ExtraBold";
-      font-size: px(16);
+      font-size: 16px;
     }
 
     div p {
       font-family: "OS Light";
-      font-size: px(16);
+      font-size: 16px;
     }
 
     a {
       float: right;
-      font-size: px(18);
+      font-size: 18px;
       font-family: "LG";
       color: #454545;
       text-decoration: none;
@@ -96,12 +121,12 @@
   }
   .contentClients {
     div {
-      margin-top: px(90);
-      padding-top: px(25);
-      padding-bottom: px(30);
+      margin-top: 90px;
+      padding-top: 25px;
+      padding-bottom: 30px;
       box-sizing: border-box;
-      width: px(345);
-      height: px(155);
+      width: 345px;
+      height: 155px;
       background: url("../images/details/logos480.png");
       background-size: cover;
     }

@@ -3,13 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: px(160);
-    min-height: px(400);
+    min-height: 400px;
     background-color: rgba(0, 0, 0, 0.4);
   }
   .buttonLeft {
-    width: px(30);
-    height: px(42);
+    width: 30px;
+    height: 42px;
     background: url("../images/details/arrowLeft.png");
     background-size: cover;
     border: none;
@@ -23,7 +22,7 @@
   .contentSlider {
     display: flex;
     position: relative;
-    margin: 0px px(295);
+    margin: 0px 295px;
     width: px(960);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 
@@ -41,7 +40,7 @@
 
     p {
       margin: 0px;
-      width: px(600);
+      width: 600px;
       font-family:"OS Light";
       font-size: 18px;
       color: #fff;
@@ -49,18 +48,18 @@
 
     .contentSliderPhone {
       position: absolute;
-      top: px(-50);
-      right: px(3);
-      width: px(274);
-      height: px(434);
+      top: -50px;
+      right: 3px;
+      width: 274px;
+      height: 434px;
       background: url("../images/details/iphone.png");
       background-size: cover;
     }
   }
 
   .buttonRight {
-    width: px(30);
-    height: px(42);
+    width: 30px;
+    height: 42px;
     border: none;
     background: url("../images/details/arrowRight.png");
     background-size: cover;
@@ -73,18 +72,25 @@
   }
 
   .progressSlider {
+    display: flex;
+    justify-content: center;
     div {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 16px;
+      height: 16px;
       box-sizing: border-box;
-      width: 15px;
-      height: 15px;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.3);
     }
-    
     .active {
-      background-color: #fff;
-      border: 3px solid rgba(0, 0, 0, 0.3);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+      background: linear-gradient(180deg, #d4d4d4 0%, #ffffff 100%);
     }
   }
 }

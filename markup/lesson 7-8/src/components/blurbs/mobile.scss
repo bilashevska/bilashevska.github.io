@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: px(75) 0px;
+  padding: 75px 0px;
   box-sizing: border-box;
   background: linear-gradient(to top, #322539 0%, #745083 100%);
 
@@ -15,19 +15,19 @@
   }
 
   h1 {
-    margin-bottom: px(20);
-    font-size: px(30);
+    margin-bottom: 20px;
+    font-size: 30px;
   }
 
   p {
-    margin-bottom: px(20);
-    font-size: px(16);
+    margin-bottom: 20px;
+    font-size: 16px;
     font-family: "Open Sans Light" ;
 
   }
 
   a {
-    font-size: px(18);
+    font-size: 18px;
     float: right;
     color: #fff;
     text-decoration: none;
@@ -38,23 +38,23 @@
   }
 
   .icon {
-    margin-right: px(25);
-    width: px(33);
-    height: px(33);
+    margin-right: 25px;
+    width: 33px;
+    height: 33px;
     background-image: url("../images/details/key.png");
     background-size: cover;
   }
 
   .information {
-    width: px(350);
+    width: 350px;
     text-align: justify;
     word-wrap: break-word;
     word-break: break-all;
   }
 
   .blurbs-two {
-    margin-right: px(60);
-    margin-left: px(60);
+    margin-right: 60px;
+    margin-left: 60px;
 
     .icon {
       background-image: url("../images/details/speach.png");
