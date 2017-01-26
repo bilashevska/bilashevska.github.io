@@ -3,37 +3,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  min-width: 480px;
   background-color: #f9f9f9;
 
-  .contentInfo {
+  &__info {
     display: flex;
     flex-direction: column;
   }
 
-  .startsHere {
+  .info {
+    margin: 0px auto 60px;
     position: relative;
     box-sizing: border-box;
-    width: 429px;
-    height: 294px;
+    width: 415px;
+    height: 300px;
     background: url("../images/details/comment.png");
     background-size: cover;
-
-    .information {
-      padding: 25px  40px;
-      box-sizing: border-box;
-      div {
-        position: absolute;
-        top: 15px;
-        left: -30px;
-        width: 51px;
-        height: 51px;
-        border-radius: 50%;
-        background: url("../images/details/startsIcon.png");
-        background-size: cover;
-      }
-
-    }
 
     h1 {
       font-family: "LG";
@@ -48,60 +36,109 @@
 
     p {
       margin-top: 20px;
-      width: 350px;
-      text-align: justify;
+      width: 310px;
       font-family: "OS Light";
+      text-align: justify;
+      overflow: hidden;
+      text-overflow: clip;
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
       font-size: 16px;
-      line-height: 13px;
+      line-height: 1.5;
     }
-  }
 
-  .informationController {
-    display: flex;
-    margin: 0 auto;
-    div {
-      display: flex;
-      justify-content: center;
-      justify-content: center;
-      width: 16px;
-      height: 16px;
+    &__article {
+      padding: 25px 0px 0px 40px;
       box-sizing: border-box;
-      border-radius: 50%;
-      border: 1px solid #e6e6e6;
-      box-shadow: 1px 2px 0px 0px rgba(255, 255, 255, 1);
-      background-color: #fff;
+      div {
+        position: absolute;
+        top: 15px;
+        left: -30px;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background: url("../images/details/startsIcon.png");
+        background-size: cover;
+      }
+
     }
-    .active {
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      border: 1px solid #454545;
-      background: linear-gradient(180deg, #454545 0%, #6a6a6a 100%);
+
+    &__controller {
+      display: flex;
+      justify-content: space-between;
+      margin: 55px auto 30px;
+      width: 70px ;
+
+      div {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+        box-shadow: 1px 2px 0px 0px rgba(255, 255, 255, 1);
+        background-color: #fff;
+
+        div {
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          div {
+            border: 1px solid #454;
+            background: linear-gradient(180deg, rgba(69, 69, 69, .2) 0%, rgba(106, 106, 106, .3) 100%); ;
+          }
+        }
+
+        &.active {
+          div {
+            border: 1px solid #454545;
+            background: linear-gradient(180deg, #454545 0%, #6a6a6a 100%);
+          }
+        }
+      }
+
+
+
+
     }
+
 
   }
 
-  .recentUpdates {
-    margin-left: 60px;
+  .updates {
+    margin-left: 70px;
     &>div {
       display: flex;
       align-items: center;
-      margin-bottom: 25px;
+      margin-bottom: 8px;
     }
 
     .avatar {
+      margin-top: -1px;
+      margin-right: 15px;
       width: 49px;
-      height: 49px;
-      background: url("../images/details/updates1.png");
+      height: 50px;
+      background: url("../images/details/updates1.png") no-repeat;
       background-size: cover;
     }
 
     h1 {
+      margin-bottom: 15px;
       font-family: "LG";
       font-size: 30px;
     }
 
     div h1 {
+      margin-top: 5px;
+      margin-bottom: 7px;
       font-family: "OS ExtraBold";
       font-size: 16px;
     }
@@ -119,7 +156,8 @@
       text-decoration: none;
     }
   }
-  .contentClients {
+
+  &__clients {
     div {
       margin-top: 90px;
       padding-top: 25px;

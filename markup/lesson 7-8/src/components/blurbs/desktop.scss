@@ -1,68 +1,73 @@
 & {
   display: flex;
-  justify-content: center;
-  padding: 75px 0px;
+  padding: 72px 200px 71px;
   box-sizing: border-box;
+  min-width: 960px;
   background: linear-gradient(to top, #322539 0%, #745083 100%);
 
-  &>div {
+  &__item {
     display: flex;
+    box-sizing: border-box;
     color: #fff;
     font-family: "LG";
     text-shadow: 0px 1px 0px #000;
-  }
 
-  h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
-  }
-
-  p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: "Open Sans Light" ;
-
-  }
-
-  a {
-    font-size: 18px;
-    float: right;
-    color: #fff;
-    text-decoration: none;
-
-    &:hover {
-      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 100;
     }
-  }
 
-  .icon {
-    margin-right: 25px;
-    width: 33px;
-    height: 33px;
-    background-image: url("../images/details/key.png");
-    background-size: cover;
-  }
+    p {
+      margin-top: 10px;
+      width: 210px;
+      font-size: 16px;
+      font-family: "OS Light" ;
+    }
 
-  .information {
-    width: 215px;
-    text-align: justify;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
+    a {
+      margin-top: 35px;
+      font-size: 18px;
+      float: right;
+      color: #fff;
+      text-decoration: none;
 
-  .blurbs-two {
-    margin-right: 60px;
-    margin-left: 60px;
+      &:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+      }
+    }
 
     .icon {
-      background-image: url("../images/details/speach.png");
+      margin-top: 11px;
+      margin-left: 3px;
+      margin-right: 25px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/details/key.png");
+      background-size: cover;
     }
-  }
 
-  .blurbs-three {
-    .icon {
-      background-image: url("../images/details/music.png");
+    .information {
+      text-align: justify;
+      word-break: break-all;
     }
 
+    &--one {
+      margin-right: 70px;
+    }
+
+    &--two {
+      margin-right: 70px;
+      .icon {
+        background-image: url("../images/details/speach.png");
+      }
+    }
+
+    &--three {
+      .icon {
+        background-image: url("../images/details/music.png");
+      }
+
+    }
   }
 }

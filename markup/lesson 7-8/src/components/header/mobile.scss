@@ -1,12 +1,14 @@
 & {
   position: relative;
-  margin: 30px auto 0px;
+  margin: 0px auto 0px;
+  padding: 74px 0px 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 60px;
+  height: 117px;
+  min-width: 420px;
   line-height: 24px;
 
   .logo {
@@ -30,7 +32,7 @@
   }
   nav {
     position: absolute;
-    top: 100%;
+    top: 123%;
     &:hover{
       background-color: rgba(54, 41, 62, 0.91);
       border: 1px solid #051116;
@@ -51,12 +53,13 @@
   li {
     display: none;
     box-sizing: border-box;
-    padding: 2px 4px;
+
 
     &:first-child {
       display: block;
       box-sizing: border-box;
       a {
+        padding: 2px 4px;
         border-bottom: 2px solid #edbfff;
       }
     }

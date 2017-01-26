@@ -8,7 +8,6 @@
   <link type="text/css" rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-<div class="wrapper">
   <header>
     <div class="logo">
       <a href="https://github.com/bilashevska/bilashevska.github.io/tree/master/markup" target="_blank">pingbull<span>er</span> </a>
@@ -26,13 +25,13 @@
   </header>
 
   <div class="slider">
-    <div class="bodySlider">
-      <button class="buttonLeft"></button>
+    <div class="slider__body">
+      <button class="button button--left"></button>
 
-      <div class="contentSlider">
-        <div class="contentSliderText">
+      <div class="content-slider">
+        <div class="content-slider__text">
           <h1>Lorem Ipsum Dolor</h1>
-          <h2>IT WILL MAKE ALL OF YOUR DREAMS COME</h2>
+          <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
           <p>Semper sollicitudin gravida eget, vestibulum sit amet sapien.
             Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam
             venenatis hendrerit est at volutpat. Morbi elementum euismod
@@ -40,25 +39,24 @@
             euismod id lectus. Nulla interdum arcu et felis aliquam a
             tempus lectus lobortis.</p>
         </div>
-        <div class="contentSliderPhone">
+        <div class="content-slider__phone">
 
         </div>
 
       </div>
 
-      <button class="buttonRight"></button>
+      <button class="button button--right"></button>
     </div>
-    <div class="progressSlider">
-      <div></div>
-      <div><div class="active"></div></div>
-      <div></div>
-      <div></div>
+    <div class="slider__controller">
+      <div><div></div></div>
+      <div class="active"><div ></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
     </div>
   </div>
 
-
   <div class="blurbs">
-    <div class="blurbs-one">
+    <div class="blurbs__item blurbs__item--one">
       <div class="icon"></div>
       <div class="information">
         <h1>ABOUT OUR COMPANY</h1>
@@ -68,7 +66,7 @@
         <a href="">READ MORE</a>
       </div>
     </div>
-    <div class="blurbs-two">
+    <div class="blurbs__item blurbs__item--two">
       <div class="icon"></div>
       <div class="information">
         <h1>ABOUT OUR COMPANY</h1>
@@ -78,7 +76,7 @@
         <a href="">READ MORE</a>
       </div>
     </div>
-    <div class="blurbs-three">
+    <div class="blurbs__item blurbs__item--three">
       <div class="icon"></div>
       <div class="information">
         <h1>ABOUT OUR COMPANY</h1>
@@ -92,9 +90,9 @@
   </div>
 
   <div class="content">
-    <div class="contentInfo">
-      <div class="startsHere">
-        <div class="information">
+    <div class="content__info">
+      <div class="info">
+        <div class="info__article">
           <div></div>
           <h1>PINGBULLER <span>STARTS HERE</span></h1>
           <p>“Nunc turpis neque, feugiat eget eleifend et, laci
@@ -105,15 +103,15 @@
             venenatis quis neque. Mauris nec metus ultricies erat
             consequat dignissim non eu nisl.”</p>
         </div>
-        <div class="informationController">
-          <div></div>
-          <div><div class="active"></div></div>
-          <div></div>
-          <div></div>
+        <div class="info__controller">
+          <div><div></div></div>
+          <div class="active"><div ></div></div>
+          <div><div></div></div>
+          <div><div></div></div>
         </div>
       </div>
 
-      <div class="recentUpdates">
+      <div class="updates">
         <h1>RECENT UPDATES</h1>
         <div>
           <div class="avatar"></div>
@@ -141,7 +139,7 @@
         <a href="">READ MORE HERE</a>
       </div>
     </div>
-    <div class="contentClients">
+    <div class="content__clients">
       <div></div>
     </div>
 
@@ -149,7 +147,7 @@
   </div>
 
   <div class="news">
-    <div class="about">
+    <div class="news__item news__item--about">
       <h1>PIGBULL<span>ER</span></h1>
       <span>Copyright 2013, Pingbull AS</span>
       <p>Nunc turpis neque, feugiat eget eleifend et,
@@ -158,7 +156,7 @@
         vitae lectus eu libero pellentesque
       </p>
     </div>
-    <div class="comments">
+    <div class="news__item news__item--comments">
       <h1>RECENT COMMENTS</h1>
       <p>Nunc turpis neque, feugiat eget eleifend et,
         lacinia non neque. Praesent rhoncus ultrices posuere.
@@ -166,7 +164,7 @@
         vitae lectus eu libero pellentesque pulvinar. Quisque urna
         risus, mattis pulvinar bibendum in, venenatis </p>
     </div>
-    <div class="categories">
+    <div class="news__item news__item--categories">
       <h1>NEWS CATEGORIES</h1>
       <p>Nunc turpis neque, feugiat eget eleifend et,
         lacinia non neque. Praesent rhoncus ultrices posuere.
@@ -190,6 +188,6 @@
     <p> Designed by <span>PingbullAS</span></p>
   </footer>
 
-</div>
+<script src="js/script.js"></script>
 </body>
 </html>

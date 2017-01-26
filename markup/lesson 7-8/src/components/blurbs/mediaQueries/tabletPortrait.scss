@@ -1,1 +1,46 @@
 @import '../desktop';
+& {
+  padding: 70px 0px 68px 30px;
+  box-sizing: border-box;
+  min-width: 768px;
+
+  &__item {
+    display: flex;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 24px;
+      line-height: 40px;
+      font-weight: 100;
+    }
+
+
+    p {
+      margin-top: 0px;
+      width: 140px;
+      line-height: 1.45;
+      overflow: hidden;
+      text-overflow: clip;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+
+    a {
+      margin-top: 10px;
+    }
+
+    .icon {
+      margin-left: 3px;
+      margin-right: 20px;
+    }
+
+    &--one {
+      margin-right: 60px;
+    }
+
+    &--two {
+      margin-right: 60px;
+    }
+  }
+}
