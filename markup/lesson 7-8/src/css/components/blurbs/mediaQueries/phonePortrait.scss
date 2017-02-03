@@ -1,0 +1,44 @@
+@import '../mobile';
+& {
+  padding: 67px 0px 63px 0px;
+
+  &__item {
+    width: 250px;
+
+    p {
+      width: 200px;
+      line-height: 1.45;
+      overflow: hidden;
+      text-overflow: clip;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    a {
+      font-size: 19px;
+      margin-right: -13px;
+    }
+
+    .icon {
+      margin-top: 7px;
+      margin-right: 20px;
+      width: 31px;
+      height: 33px;
+      background: url("../images/details/key.png") no-repeat ;
+      background-size: contain;
+    }
+
+    .information {
+      width: 240px;
+    }
+
+    &--two {
+      margin-bottom: 31px;
+
+    }
+
+
+  }
+}
+

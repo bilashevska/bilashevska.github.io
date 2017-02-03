@@ -1,0 +1,44 @@
+@import '../desktop';
+& {
+  justify-content: center;
+  padding-top: 105px;
+  padding-bottom: 93px;
+  padding-left: 4%;
+  width: 100%;
+
+  &__item {
+    width: 217px;
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 23px;
+    }
+
+    p {
+      line-height: 1.5;
+      hyphens: auto;
+      overflow: hidden;
+      text-overflow: clip;
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+    }
+
+    &--about {
+      margin-right: 50px;
+
+      h1 + span {
+        display: none;
+      }
+
+      p {
+        margin-top: 0px;
+      }
+    }
+
+    &--comments {
+      margin-right: 50px;
+    }
+  }
+
+}

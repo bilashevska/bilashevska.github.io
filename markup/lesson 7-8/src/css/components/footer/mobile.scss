@@ -1,0 +1,56 @@
+& {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 46px;
+  padding-bottom: 85px;
+  padding-left: 2.4%;
+  padding-right: 0px;
+  width: 100%;
+  //height: 114px;
+  background: url("../images/backgrounds/bgFooter960.jpg");
+  background-size: cover;
+
+  nav {
+    margin-bottom: 37px;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 12px;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+  }
+
+  nav a {
+    display: block;
+    padding: 0px 4px 1px;
+    box-sizing: border-box;
+    font-family: "LG";
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+
+    &:hover {
+      text-shadow: -1px 2px 2px rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  p {
+    font-size: 12px;
+    font-family:'OS Light';
+    color: #fff;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+
+    span {
+      font-family: "OS Extrabold";
+    }
+  }
+
+}

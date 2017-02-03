@@ -1,0 +1,152 @@
+@import '../mobile';
+& {
+
+  &__info {
+    width: 285px;
+  }
+
+  .info {
+    width: 260px;
+    height: 294px;
+
+    h1 {
+      font-family: "LG";
+      font-size: 24px;
+      color: #454545;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+    }
+
+    span {
+      display: block;
+    }
+
+    p {
+      margin-top: 4px;
+      width: 170px;
+      font-family: "OS Light";
+      word-break: break-all;
+      /* text-align: justify; */
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__article {
+      padding: 25px 0px 0px 40px;
+      box-sizing: border-box;
+      div {
+        position: absolute;
+        top: 17px;
+        left: -5%;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background: url("../images/details/startsIcon.png");
+        background-size: cover;
+      }
+
+    }
+
+    &__controller {
+      display: flex;
+      justify-content: space-between;
+      margin: 55px auto 60px;
+      width: 70px ;
+
+      div {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+        box-shadow: 1px 2px 0px 0px rgba(255, 255, 255, 1);
+        background-color: #fff;
+
+        div {
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          div {
+            border: 1px solid #454;
+            background: linear-gradient(180deg, rgba(69, 69, 69, .2) 0%, rgba(106, 106, 106, .3) 100%); ;
+          }
+        }
+
+        &.active {
+          div {
+            border: 1px solid #454545;
+            background: linear-gradient(180deg, #454545 0%, #6a6a6a 100%);
+          }
+        }
+      }
+
+
+
+
+    }
+
+
+  }
+
+  .updates {
+
+
+    .avatar {
+      margin-top: 2px;
+      margin-left: -12px;
+      margin-right: 14px;
+      width: 49px;
+      height: 48px;
+      background: url("../images/details/updates1.png") no-repeat;
+      background-size: cover;
+    }
+
+    div h1 {
+      width: 153px;
+      margin-top: 0px;
+      margin-bottom: 7px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+    }
+
+    div p {
+      width: 222px;
+    }
+
+    a {
+      margin-top: 9px;
+      float: right;
+      margin-right: 11px;
+      font-size: 19px;
+    }
+  }
+
+  &__clients {
+    margin-top: 88px;
+    padding-top: 52px;
+    padding-bottom: 75px;
+    padding-left: 8%;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    div {
+      margin: 0 auto;
+      box-sizing: border-box;
+      width: 237px;
+      height: 294px;
+      background: url("../images/details/logos320.png");
+      background-size: cover;
+    }
+  }
+
+
+}

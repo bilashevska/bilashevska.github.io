@@ -10,7 +10,7 @@ var imageMin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 
 gulp.task('sass', function() {
-  return sass('src/components/main.scss', { sourcemap: true, style: 'compact' })
+  return sass('src/css/components/main.scss', { sourcemap: true, style: 'compact' })
     .on('error', sass.logError)
     .pipe(sourceMaps.init({loadMaps: true}))
     .pipe(autoPrefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
@@ -26,12 +26,12 @@ gulp.task('pages', function(){
 });
 
 gulp.task('fonts', function(){
-  return gulp.src('src/theme/fonts/*')
+  return gulp.src('src/css/theme/fonts/*')
     .pipe(gulp.dest('dist/css/fonts'))
 });
 
 gulp.task('images', function(){
-  return gulp.src('src/theme/images/*/*')
+  return gulp.src('src/css/theme/images/*/*')
     .pipe(gulp.dest('dist/images/'))
 });
 // js-task
@@ -59,6 +59,6 @@ gulp.task('webserver', function() {
 gulp.task('default', function() {
   gulp.start('pages', 'sass', 'images', 'fonts', 'webserver', 'js');
   gulp.watch('src/*.html', ['pages']);
-  gulp.watch('src/components/**/*.scss', ['sass']);
+  gulp.watch('src/css/components/**/*.scss', ['sass']);
   gulp.watch('src/js/*.js', ['js']);
 });
