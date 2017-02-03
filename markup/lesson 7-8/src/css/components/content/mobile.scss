@@ -72,7 +72,7 @@
       display: flex;
       justify-content: space-between;
       margin: 55px auto 60px;
-      width: 70px ;
+      width: 70px;
 
       div {
         display: flex;
@@ -97,7 +97,7 @@
 
           div {
             border: 1px solid #454;
-            background: linear-gradient(180deg, rgba(69, 69, 69, .2) 0%, rgba(106, 106, 106, .3) 100%); ;
+            background: linear-gradient(180deg, rgba(69, 69, 69, .2) 0%, rgba(106, 106, 106, .3) 100%);;
           }
         }
 
@@ -109,16 +109,12 @@
         }
       }
 
-
-
-
     }
-
 
   }
 
   .updates {
-    &>div {
+    & > div {
       display: flex;
       align-items: center;
 
@@ -135,7 +131,7 @@
       background-size: cover;
     }
 
-    >h1 {
+    > h1 {
       margin-left: -5px;
       margin-bottom: 15px;
       font-family: "LG";
@@ -167,25 +163,30 @@
       font-family: "LG";
       color: #454545;
       text-decoration: none;
+      transition: all ease-out 0.7s;
+
+      &:hover {
+        text-shadow: 2px 2px 7px rgba(237, 168, 255, 0.57);
+        color: #3a2e3e;
+      }
     }
-  }
 
-  &__clients {
-    margin-top: 93px;
-    padding-top: 37px;
-    padding-bottom: 40px;
-    padding-left: 11px;
-    border-top: 1px solid #e6e6e6;
-    width: 100%;
-    div {
-      margin: 0 auto;
-      box-sizing: border-box;
-      width: 345px;
-      height: 155px;
-      background: url("../images/details/logos480.png");
-      background-size: cover;
+    &__clients {
+      margin-top: 93px;
+      padding-top: 37px;
+      padding-bottom: 40px;
+      padding-left: 11px;
+      border-top: 1px solid #e6e6e6;
+      width: 100%;
+      div {
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 345px;
+        height: 155px;
+        background: url("../images/details/logos480.png");
+        background-size: cover;
+      }
     }
+
   }
-
-
 }

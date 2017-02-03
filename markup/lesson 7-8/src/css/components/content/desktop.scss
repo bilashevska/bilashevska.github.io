@@ -154,6 +154,12 @@
       font-family: "LG";
       color: #454545;
       text-decoration: none;
+      transition: all ease-out 0.7s;
+
+      &:hover {
+        text-shadow: 2px 2px 7px rgba(237, 168, 255, 0.57);
+        color: #3a2e3e;
+      }
     }
   }
   

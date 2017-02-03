@@ -1,6 +1,7 @@
 @import '../desktop';
 & {
   width: 100%;
+  box-sizing: border-box;
       &__body {
         width: 100%;
       }
@@ -8,11 +9,11 @@
       .button {
 
         &--left {
-          left: -2px;
+          left: 0px;
         }
 
         &--right {
-          right: -2px;
+          right: 0px;
         }
       }
 
