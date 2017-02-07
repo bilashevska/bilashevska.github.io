@@ -1,8 +1,8 @@
 header {
-    @import '../../theme/mq';
-    @import '../../theme/functions';
-    @import 'variables';
-    @import 'mediaQueries/main';
+  @import '../../theme/mq';
+  @import '../../theme/functions';
+  @import 'variables';
+  @import 'mediaQueries/main';
 
   @keyframes border-nav {
     from {
@@ -20,5 +20,29 @@ header {
     to {
       border-bottom: 2px solid rgb(228, 171, 255);
     }
+  }
+
+  @keyframes menu-visible {
+    from {
+      background-color: rgba(54, 41, 62, 0);
+      border: 1px solid rgba(5, 17, 22, 0);
+    }
+    25% {
+      background-color: rgba(54, 41, 62, .25);
+      border: 1px solid rgba(5, 17, 22, .25);
+    }
+    50% {
+      background-color: rgba(54, 41, 62, .5);
+      border: 1px solid rgba(5, 17, 22, .5);
+    }
+    75% {
+      background-color: rgba(54, 41, 62, .75);
+      border: 1px solid rgba(5, 17, 22, .75);
+    }
+    to {
+      background-color: rgba(54, 41, 62, 0.91);
+      border: 1px solid #051116;
+    }
+
   }
 }
