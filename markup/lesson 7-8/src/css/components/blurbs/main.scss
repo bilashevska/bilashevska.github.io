@@ -1,6 +1,28 @@
 .blurbs {
-    @import '../../theme/mq';
-    @import '../../theme/functions';
-    @import 'variables';
-    @import 'mediaQueries/main';
+  @import '../../theme/mq';
+  @import '../../theme/functions';
+  @import 'variables';
+  @import 'mediaQueries/main';
+  
+  @keyframes link-blurbs {
+    from {
+      text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
+    }
+
+    25% {
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    }
+
+    75% {
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+    }
+
+    to {
+      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
+    }
+  }
 }

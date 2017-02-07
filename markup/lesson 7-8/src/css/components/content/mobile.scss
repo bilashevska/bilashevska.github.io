@@ -16,6 +16,7 @@
     box-sizing: border-box;
     width: 460px;
     padding-left: 30px;
+    padding-bottom: 93px;
   }
 
   .info {
@@ -96,8 +97,7 @@
           cursor: pointer;
 
           div {
-            border: 1px solid #454;
-            background: linear-gradient(180deg, rgba(69, 69, 69, .2) 0%, rgba(106, 106, 106, .3) 100%);;
+            animation: content-progress .3s ease forwards;
           }
         }
 
@@ -163,11 +163,9 @@
       font-family: "LG";
       color: #454545;
       text-decoration: none;
-      transition: all ease-out 0.7s;
 
       &:hover {
-        text-shadow: 2px 2px 7px rgba(237, 168, 255, 0.57);
-        color: #3a2e3e;
+        animation: link-hover 1s ease-in-out infinite;
       }
     }
 
@@ -188,5 +186,21 @@
       }
     }
 
+  }
+
+  &__clients {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    div {
+      margin: 34px auto 44px;
+      box-sizing: border-box;
+      width: 345px;
+      height: 154px;
+      background: url("../images/details/logos480.png") no-repeat;
+      background-size: contain;
+    }
   }
 }

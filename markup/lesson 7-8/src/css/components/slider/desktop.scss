@@ -14,29 +14,33 @@
 
   .button {
     position: absolute;
-    width: 30px;
+    width: 42px;
     height: 42px;
+    border-radius: 50%;
     background-size: cover;
     border: none;
     outline: none;
 
     &--left {
       left: 0;
-      background: url("../images/details/arrowLeft.png");
+      background: url("../images/details/arrowLeft.png") no-repeat;
 
       &:hover {
         cursor: pointer;
-        background: url("../images/details/leftClick.png");
+        background-image: url("../images/details/leftClick.png");
+        animation: circle-button 0.5s  ease-in-out forwards;
       }
     }
 
     &--right {
       right: 0;
-      background: url("../images/details/arrowRight.png");
+      background: url("../images/details/arrowRight.png") no-repeat;
+      background-position: top right;
 
       &:hover {
         cursor: pointer;
-        background: url("../images/details/rightClick.png");
+        background-image: url("../images/details/rightClick.png");
+        animation: circle-button 0.5s  ease-in-out forwards;
       }
     }
   }
@@ -91,7 +95,7 @@
     justify-content: space-between;
     margin-top: 91px;
     margin-bottom: 60px;
-    margin-left: 67.5%;
+    margin-left: 73%;
     width: 73px;
     
     div {
@@ -114,7 +118,7 @@
         cursor: pointer;
 
         div {
-           background: rgba(255, 255, 255, .45);
+           animation: slider-hover .4s ease-in-out forwards;
         }
       }
 

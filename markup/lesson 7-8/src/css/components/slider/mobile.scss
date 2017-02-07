@@ -14,8 +14,10 @@
 
   .button {
     position: absolute;
-    width: 27px;
+    width: 40px;
     height: 40px;
+
+    border-radius: 50%;
     background-size: contain;
     border: none;
     outline: none;
@@ -23,22 +25,25 @@
     &--left {
       top: 41.5%;
       left: 0px;
-      background: url("../images/details/arrowLeft.png");
+      background: url("../images/details/arrowLeft.png") no-repeat;
 
       &:hover {
         cursor: pointer;
-        background: url("../images/details/leftClick.png");
+        background-image: url("../images/details/leftClick.png");
+        animation: circle-button 0.5s  ease-in-out forwards;
       }
     }
 
     &--right {
       top: 41.5%;
       right: 0px;
-      background: url("../images/details/arrowRight.png");
+      background: url("../images/details/arrowRight.png") no-repeat;
+      background-position: top right;
 
       &:hover {
         cursor: pointer;
-        background: url("../images/details/rightClick.png");
+        background-image: url("../images/details/rightClick.png");
+        animation: circle-button 0.5s  ease-in-out forwards;
       }
     }
   }
@@ -79,9 +84,9 @@
 
 
     &__phone {
-      margin-top: 35px;
+      margin-top: 15px;
       width: 190px;
-      height: 305px;
+      height: 289px;
       background: url("../images/details/iphone.png") no-repeat;
       background-size: cover;
     }
@@ -116,7 +121,7 @@
         cursor: pointer;
 
         div {
-          background: rgba(255, 255, 255, .45);
+          animation: slider-hover .4s ease-in-out forwards;
         }
 
       }

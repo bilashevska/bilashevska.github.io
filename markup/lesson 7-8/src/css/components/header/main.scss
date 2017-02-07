@@ -3,4 +3,22 @@ header {
     @import '../../theme/functions';
     @import 'variables';
     @import 'mediaQueries/main';
+
+  @keyframes border-nav {
+    from {
+      border-bottom: transparent;
+    }
+    25% {
+      border-bottom: 2px solid rgba(228, 171, 255, 0.25);
+    }
+    50% {
+      border-bottom: 2px solid rgba(228, 171, 255, 0.5);
+    }
+    75% {
+      border-bottom: 2px solid rgba(228, 171, 255, 0.75);
+    }
+    to {
+      border-bottom: 2px solid rgb(228, 171, 255);
+    }
+  }
 }

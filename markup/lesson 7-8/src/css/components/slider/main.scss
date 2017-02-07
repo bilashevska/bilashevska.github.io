@@ -1,6 +1,40 @@
 .slider {
-    @import '../../theme/mq';
-    @import '../../theme/functions';
-    @import 'variables';
-    @import 'mediaQueries/main';
+  @import '../../theme/mq';
+  @import '../../theme/functions';
+  @import 'variables';
+  @import 'mediaQueries/main';
+
+  @keyframes circle-button {
+    from {
+      background-color: transparent;
+    }
+    25%{
+      background-color:rgba(255, 255, 255, 0.05);
+      box-shadow: 1px 1px 7px rgba(255, 255, 255,0.1);
+    }
+    50% {
+      background-color:rgba(255, 255, 255, 0.1);
+      box-shadow: 1px 1px 7px rgba(255, 255, 255,0.15);
+    }
+    75%{
+      background-color:rgba(255, 255, 255, 0.15);
+      box-shadow: 1px 1px 7px rgba(255, 255, 255,0.2);
+    }
+    to {
+      background-color:rgba(255, 255, 255, 0.2);
+      box-shadow: 1px 1px 7px rgba(255, 255, 255,0.25);
+    }
+  }
+
+  @keyframes slider-hover {
+    from {
+      background-color: transparent;
+    }
+    50% {
+      background-color: rgba(255, 255, 255, .3);
+    }
+    to {
+      background-color: rgba(255, 255, 255, .45);
+    }
+  }
 }
