@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-top: 72px;
-  padding-bottom: 71px ;
+  padding-bottom: 59px ;
   box-sizing: border-box;
   width: 100%;
   background: linear-gradient(to top, #322539 0%, #745083 100%);
@@ -21,10 +21,11 @@
     }
 
     p {
-      margin-top: 10px;
-      width: 215px;
+      margin-top: 6px;
+      width: 222px;
       font-size: 16px;
       font-family: "OS Light" ;
+      line-height: 23px;
     }
 
     a {

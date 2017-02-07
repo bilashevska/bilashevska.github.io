@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neomulik/Gulp.git"
+    "url": "git+https://github.com/bilashevska"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neomulik/Gulp/issues"
+    "url": "https://github.com/bilashevska"
   },
-  "homepage": "https://github.com/neomulik/Gulp#readme",
+  "homepage": "https://github.com/bilashevska",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
