@@ -1,21 +1,25 @@
 @font-face {
   font-family: "LG";
-  src: url(fonts/LeagueGothic-Regular.otf);
+  src: url(fonts/LeagueGothic-Regular.otf),
+  url(fonts/leaguegothic-regular.eot);
 }
 
 @font-face {
   font-family: "LG Condensed";
-  src: url(fonts/LeagueGothic-CondensedRegular.otf);
+  src: url(fonts/LeagueGothic-CondensedRegular.otf),
+  url(fonts/leaguegothic-condensedregular.eot);
 }
 
 @font-face {
   font-family: "LG Condensed Italic";
-  src: url(fonts/LeagueGothic-CondensedItalic.otf);
+  src: url(fonts/LeagueGothic-CondensedItalic.otf),
+  url(fonts/leaguegothic-condenseditalic.eot);
 }
 
 @font-face {
   font-family: "LG Italic";
-  src: url(fonts/LeagueGothic-Italic.otf);
+  src: url(fonts/LeagueGothic-Italic.otf),
+  url(fonts/leaguegothic-italic.eot);
 }
 
 @font-face {
@@ -25,10 +29,13 @@
 
 @font-face {
   font-family: "OS Light";
-  src: url(fonts/OpenSans-Light.ttf);
+  src: url(fonts/OpenSans-Light.ttf),
+  url(fonts/opensans-light.eot);
+
 }
 
 @font-face {
   font-family: "OS Extrabold";
-  src: url(fonts/OpenSans-ExtraBold.ttf);
+  src: url(fonts/OpenSans-ExtraBold.ttf),
+  url(fonts/opensans-extrabold.eot);
 }

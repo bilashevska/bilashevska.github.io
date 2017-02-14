@@ -1,0 +1,592 @@
+@font-face {
+  font-family: "LG";
+  src: url(fonts/leaguegothic-regular.eot);
+}
+
+@font-face {
+  font-family: "LG Condensed";
+  src: url(fonts/leaguegothic-condensedregular.eot);
+}
+
+@font-face {
+  font-family: "LG Condensed Italic";
+  src: url(fonts/leaguegothic-condenseditalic.eot);
+}
+
+@font-face {
+  font-family: "LG Italic";
+  src: url(fonts/leaguegothic-italic.eot);
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url(fonts/georgiai.ttf);
+}
+
+@font-face {
+  font-family: "OS Light";
+  src: url(fonts/opensans-light.eot);
+
+}
+
+@font-face {
+  font-family: "OS Extrabold";
+  src: url(fonts/opensans-extrabold.eot);
+}
+
+body {
+  min-width: 960px;
+  background: url("../images/backgrounds/bg960.jpg") no-repeat;
+  background-position: top center
+}
+
+
+/*styles for header*/
+.header {
+  margin: 0px auto 168px;
+  padding-top: 77px;
+  width: 80%;
+}
+.header .nav {
+  float: right;
+  margin-right: 0px;
+  line-height: 48px;
+  box-sizing: border-box;
+}
+.header .nav li {
+   display: inline-block;
+}
+
+.logo {
+   margin-left: 0px;
+   float: left;
+ }
+
+.logo a {
+  font-size: 48px;
+  font-family: "LG";
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: text-shadow 0.3s;
+}
+
+.logo a span {
+  text-shadow: none;
+  margin-left: -2px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color:#322539 ;
+  font-weight: bold;
+  transition: text-shadow 0.3s;
+}
+
+.header li {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: -1px;
+  margin-right: 35px;
+  box-sizing: border-box;
+}
+.header li:last-child {
+   margin-right: 0px;
+ }
+
+.header .nav a {
+  display: block;
+  padding: 0px 4px 1px;
+  box-sizing: border-box;
+  font-family: "LG";
+  letter-spacing: 0px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 200;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.header .nav a:hover {
+   box-sizing: border-box;
+  border-bottom: 2px solid #e4abff;
+ }
+
+
+/*styles for slider*/
+.slider {
+  margin: 0px auto;
+  padding: 0;
+}
+
+.slider__body {
+   position: relative;
+   display: inline-block;
+   margin: 0px auto;
+   height: 400px;
+   width: 100%;
+ }
+
+.slider__controller {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 73%;
+
+}
+.slider__controller div {
+  display: inline-block;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #cacaca;
+}
+.slider__controller div div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.slider__controller div:hover {
+   cursor: pointer;
+}
+.slider__controller div:hover div {
+  background: #eda8ff;
+}
+
+.slider__controller .active div {
+  border: 1px solid #ffffff;
+  background: #dbdbdb;
+}
+
+
+
+.button {
+  position: absolute;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  background-size: cover;
+  border: none;
+  outline: none;
+}
+
+.button--left {
+  left: 0;
+  background: url("../images/details/arrowLeft.png") no-repeat;
+}
+.button--left:hover {
+  cursor: pointer;
+  background-image: url("../images/details/leftClick.png");
+  border-bottom: 2px solid #dfdfdf;
+ }
+
+.button--right {
+   right: 0;
+   background: url("../images/details/arrowRight.png") no-repeat;
+   background-position: top right;
+}
+
+.button--right:hover {
+  cursor: pointer;
+  background-image: url("../images/details/rightClick.png");
+  border-bottom: 2px solid #dfdfdf;
+ }
+
+.content-slider {
+  margin: 0 auto;
+  width: 870px;
+}
+
+.content-slider__text {
+  display: inline-block;
+  float: left;
+  margin-top: 80px;
+}
+
+.content-slider__text h1 {
+  margin: 0px;
+  font-family: "LG";
+  font-weight: 300;
+  font-size: 60px;
+  color: #fff;
+}
+
+.content-slider__text h2 {
+  margin: 0px;
+  font-family: "LG";
+  font-size: 32px;
+  font-weight: 300;
+  color: #edbfff;
+}
+
+.content-slider__text p {
+  width: 520px;
+  margin: 0px;
+  font-family:"OS Light";
+  letter-spacing: 0px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.content-slider__phone {
+  display: inline-block;
+  float: right;
+   margin: 0px;
+   width: 274px;
+   height: 434px;
+   background: url("../images/details/iphone.png") no-repeat;
+   background-size: contain;
+ }
+
+
+
+.blurbs {
+  padding-top: 72px;
+  padding-right: 10%;
+  padding-bottom: 59px;
+  padding-left: 10%;
+  box-sizing: border-box;
+  width: 100%;
+  background: #322539;
+}
+
+.blurbs__item {
+  display: inline-block;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "LG";
+  text-shadow: 0px 1px 0px #000;
+}
+
+.blurbs__item h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+}
+
+.blurbs__item p {
+  margin-top: 6px;
+  width: 222px;
+  font-size: 16px;
+  font-family: "OS Light" ;
+  line-height: 23px;
+}
+
+.blurbs__item a {
+  margin-top: 35px;
+  font-size: 18px;
+  float: right;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blurbs__item a:hover {
+  color: #f398ff;
+}
+
+.blurbs__item .icon {
+  float: left;
+  margin-top: 11px;
+  margin-right: 25px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/details/key.png");
+  background-size: cover;
+}
+
+.blurbs__item .information {
+  float: right;
+  text-align: justify;
+  word-break: break-all;
+}
+
+.blurbs__item--one {
+   margin-left: 0%;
+ }
+
+.blurbs__item--two {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.blurbs__item--two .icon {
+  background-image: url("../images/details/speach.png");
+}
+
+.blurbs__item--three .icon {
+  background-image: url("../images/details/music.png");
+}
+
+
+
+.content {
+  padding-top: 100px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.content__info {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 75px;
+
+ }
+
+.info {
+  position: relative;
+  display: inline-block;
+  margin-right: 4%;
+  box-sizing: border-box;
+}
+
+.content .info h1 {
+  margin-top: 30px;
+  letter-spacing: 0px;
+  font-weight: 200;
+  font-family: "LG";
+  font-size: 30px;
+  color: #454545;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+.content .info span {
+  color: #edbfff;
+}
+
+.content .info p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: "OS Light";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.info__article {
+  padding: 0px 40px 25px;
+  box-sizing: border-box;
+  width: 429px;
+  height: 294px;
+  background: url("../images/details/comment.png");
+  background-size: cover;
+}
+
+.info__article div {
+  position: absolute;
+  top: 17px;
+  left: -25px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: url("../images/details/startsIcon.png");
+  background-size: cover;
+}
+
+.info__controller {
+  margin: 3px auto 0px;
+  box-sizing: border-box;
+  width: 88px;
+}
+.info__controller div {
+  display: inline-block;
+  text-align: center;
+  width: 17px;
+  height: 17px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.info__controller div div {
+  width: 13px;
+  height: 13px;
+}
+
+.info__controller div div:hover {
+   cursor: pointer;
+}
+.info__controller div:hover div {
+  background: #eda8ff;
+}
+
+.info__controller .active div{
+  border: 1px solid #454545;
+  background: #dbdbdb;
+}
+
+.updates {
+  float: right;
+  margin-top: 30px;
+}
+.updates>div {
+    margin-bottom: 18px;
+  }
+
+.updates .avatar {
+  float: left;
+  margin-right: 15px;
+  width: 49px;
+  height: 49px;
+  background: url("../images/details/updates1.png");
+  background-size: cover;
+}
+
+.updates h1 {
+  margin-top: 1px;
+  margin-bottom: 15px;
+  font-family: "LG";
+  font-size: 30px;
+}
+
+.updates div h1 {
+  margin-bottom: 10px;
+  font-family: "OS ExtraBold";
+  font-size: 16px;
+}
+
+.updates div p {
+  font-family: "OS Light";
+  font-size: 16px;
+}
+
+.updates  a {
+  float: right;
+  margin-right: 5px;
+  font-size: 20px;
+  font-family: "LG";
+  color: #454545;
+  text-decoration: none;
+}
+
+.updates a:hover {
+   color: #7a4072;
+  text-decoration: underline;
+ }
+
+.content__clients {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 25px;
+ padding-bottom: 30px;
+}
+.content__clients div {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 775px;
+  height: 65px;
+  background: url("../images/details/logos.png") no-repeat;
+  background-size: contain;
+}
+
+
+.news {
+  margin: 0 auto;
+  padding-top: 92px;
+  padding-bottom: 85px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ececec;
+}
+
+.news__item {
+  display: inline-block;
+  width: 275px;
+}
+
+.news__item h1 {
+  margin-bottom: 12px;
+  font-family: "LG";
+  font-size: 30px;
+  color: #454545;
+}
+
+.news__item p {
+  font-family: "OS Light";
+  font-size: 16px;
+  line-height: 21px;
+  color: #787878;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.news__item--about {
+  margin-right: 6%;
+}
+.news__item--about h1 {
+  font-size: 48px;
+}
+.news__item--about span {
+  color: #b9b9b9;
+}
+
+
+.news__item--abouth1 + span {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-size: 16px;
+  color: #c5c5c5;
+}
+
+.news__item--about p {
+  margin-top: 16px;
+}
+
+.news__item--comments {
+   padding-top: 2px;
+   margin-right: 6%;
+ }
+
+.news__item--categories {
+   padding-top: 2px;
+ }
+
+.footer {
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 114px;
+  line-height: 114px;
+  background: url("../images/backgrounds/bgFooter960.jpg") no-repeat;
+  background-size: cover;
+}
+.footer .nav {
+  float: left;
+}
+
+.footer  li {
+  display: inline-block;
+  margin-right: 25px;
+  box-sizing: border-box;
+}
+
+
+.footer a {
+  display: block;
+  padding: 0px 4px 1px;
+  box-sizing: border-box;
+  font-family: "LG";
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: text-shadow 0.5s;
+}
+
+.footer p {
+  float: right;
+  font-size: 12px;
+  font-family: 'OS Light';
+  color: #fff;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.footer p span {
+  font-family: "OS Extrabold";
+}
+
+

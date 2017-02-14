@@ -5,25 +5,53 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="icon"  href="images/details/icon.png">
+  <!--[if !IE]>-->
   <link type="text/css" rel="stylesheet" href="css/app.css" />
+  <!--<![endif]-->
+  <!--[if IE]>
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/styleIE.css" />
+  <![endif]-->
+  <!--<script src="js/DOM-shim-ie8.js"></script>-->
+  <!--<script src="js/DOM-shim.js"></script>-->
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="https://github.com/bilashevska/bilashevska.github.io/tree/master/markup" target="_blank">pingbull<span>er</span> </a>
-    </div>
+<!--[if IE]>
+<div class="header">
+  <div class="logo">
+    <a href="https://github.com/bilashevska/bilashevska.github.io/tree/master/markup" target="_blank">pingbull<span>er</span> </a>
+  </div>
 
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">products</a></li>
-        <li><a href="#">lorem ipsum</a></li>
-        <li><a href="#">dolor sit amet</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="nav">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">products</a></li>
+      <li><a href="#">lorem ipsum</a></li>
+      <li><a href="#">dolor sit amet</a></li>
+    </ul>
+  </div>
+</div>
+<![endif]-->
+<!--[if !IE]>-->
+<header>
+  <div class="logo">
+    <a href="https://github.com/bilashevska/bilashevska.github.io/tree/master/markup" target="_blank">pingbull<span>er</span> </a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">products</a></li>
+      <li><a href="#">lorem ipsum</a></li>
+      <li><a href="#">dolor sit amet</a></li>
+    </ul>
+  </nav>
+</header>
+<!--<![endif]-->
 
   <div class="slider">
     <div class="slider__body">
@@ -173,20 +201,43 @@
     </div>
   </div>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">products</a></li>
-        <li><a href="#">lorem ipsum</a></li>
-        <li><a href="#">dolor sit amet</a></li>
-      </ul>
-    </nav>
-    <p> Designed by <span>PingbullAS</span></p>
-  </footer>
 
+<!--[if IE]>
+<div class="footer">
+  <div class="nav">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">products</a></li>
+      <li><a href="#">lorem ipsum</a></li>
+      <li><a href="#">dolor sit amet</a></li>
+    </ul>
+  </div>
+  <p> Designed by <span>PingbullAS</span></p>
+</div>
+<![endif]-->
+<!--[if !IE]>-->
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">products</a></li>
+      <li><a href="#">lorem ipsum</a></li>
+      <li><a href="#">dolor sit amet</a></li>
+    </ul>
+  </nav>
+  <p> Designed by <span>PingbullAS</span></p>
+</footer>
+<!--<![endif]-->
+
+<!--[if !IE]>-->
 <script src="js/script.js"></script>
+<!--<![endif]-->
+<!--[if IE]>
+<script src="js/scriptIE.js"></script>
+<![endif]-->
 </body>
 </html>
