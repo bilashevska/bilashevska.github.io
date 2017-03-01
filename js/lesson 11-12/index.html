@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 11-12</title>
+  <link rel="icon"  href="img/favicon.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jcarousel.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
+  <script src="js/jquery.jcarousel.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="jcarousel-wrapper">
+  <div class="jcarousel">
+    <ul class="jcarousel-list">
+      <li><img src="img/dog1.jpg" width="300" height="300" alt=""></li>
+      <li><img src="img/dog2.jpg" width="300" height="300" alt=""></li>
+      <li><img src="img/dog3.jpg" width="300" height="300" alt=""></li>
+      <li><img src="img/dog4.jpg" width="300" height="300" alt=""></li>
+    </ul>
+  </div>
+
+  <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+  <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+  <p class="jcarousel-pagination">
+
+  </p>
+  </div>
+
+</div>
+
+<script type="text/template" id="table-template">
+  <table>
+    <tr>
+      <th>Имя</th>
+      <th>Возраст</th>
+      <th>Аватар</th>
+    </tr>
+    <% users.forEach(function(item) { %>
+    <tr>
+      <td><%=item.name%></td>
+      <td><%=item.age%></td>
+      <td>
+        <img src=<%=getSRC(item.avatar)%> width="60" height="60" alt="lorem">
+        <p><%=item.avatar%></p>
+      </td>
+    </tr>
+
+    <% }); %>
+  </table>
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

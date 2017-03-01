@@ -1,0 +1,24 @@
+table {
+  margin: 60px auto;
+  border: 4px double #7c6081;
+}
+
+td,th {
+  padding: 5px;
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #732d81;
+  font-family: "Segoe UI Light";
+}
+
+th {
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  color: #007fff ;
+  font-weight: bolder;
+}
