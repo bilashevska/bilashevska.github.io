@@ -67,8 +67,3 @@
 .jcarousel-control-next:hover span {
   display: block;
 }
-
-.non-active {
-  background-color: rgba(78, 68, 60, 0.42);
-  cursor: default;
-}
