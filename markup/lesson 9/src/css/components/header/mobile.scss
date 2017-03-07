@@ -1,0 +1,131 @@
+& {
+  position: relative;
+  margin: 0px auto 0px;
+  padding: 74px 0px 0px 20px;
+  -ms-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 117px;
+  line-height: 24px;
+  z-index: 2;
+
+  .logo {
+    margin: 3px auto 0px;
+    a {
+      font-size: 48px;
+      font-family: "LG";
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      transition: text-shadow 0.3s;
+
+    }
+
+    &:hover {
+      text-shadow: -1px 2px 2px rgba(255, 255, 255, 0.4);
+      a {
+        background: linear-gradient(to top, #322539 0%, #745083 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -1px 2px 7px rgba(0, 0, 0, 0.4);
+      }
+
+      span {
+        -webkit-text-fill-color: #ffffff;
+        text-shadow: -1px 2px 7px rgba(255, 255, 255, 0.5);
+      }
+    }
+
+  }
+
+  span {
+    text-shadow: none;
+    background: linear-gradient(to top, #322539 0%, #745083 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: text-shadow 0.3s;
+
+    &:hover {
+      text-shadow: 3px 3px 2px rgba(69, 178, 157, 0.53);
+    }
+  }
+
+  nav {
+    margin: 0px auto 0px;
+    position: relative;
+    top: 39%;
+    box-sizing: border-box;
+    width: 246px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    border-radius: 2%;
+    z-index: 3;
+    &:hover{
+      background-color: rgba(54, 41, 62, 0.91);
+      border: 1px solid #051116;
+      animation: menu-visible .5s ease-in-out forwards;
+      li {
+        display: block;
+        &:hover {
+          background-color: rgba(54, 41, 62, 1);
+          animation: border-nav 0.4s ease-in forwards;
+
+        }
+
+      }
+    }
+
+  }
+
+
+
+  li {
+    display: none;
+    box-sizing: border-box;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: background-color .3s ;
+
+
+    &:first-child {
+      display: block;
+      box-sizing: border-box;
+      a {
+        margin: 0 auto;
+        padding: 2px 4px;
+        width: 46px;
+        border-bottom: 2px solid #edbfff;
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+
+
+  }
+
+
+
+  nav a {
+    display: block;
+    box-sizing: border-box;
+    font-family: "LG";
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    text-align: center;
+  }
+
+}
+

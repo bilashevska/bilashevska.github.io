@@ -1,0 +1,51 @@
+.content {
+  @import '../../theme/mq';
+  @import '../../theme/functions';
+  @import 'variables';
+  @import 'mediaQueries/main';
+  
+  @keyframes link-hover {
+    from {
+      color: #454545;
+    }
+
+    25% {
+      color: #cdb7d3;
+    }
+
+    50% {
+      color: #a194a5;
+    }
+
+    75% {
+      color: #7c6081;
+    }
+
+    to {
+      color: #3a2e3e;
+    }
+  }
+
+  @keyframes content-progress {
+    from {
+      border: 1px solid transparent;
+      background: linear-gradient(180deg, rgba(69, 69, 69, 0) 0%, rgba(106, 106, 106, 0) 100%);
+    }
+
+    30% {
+      border: 1px solid rgba(68, 85, 68, 0.3);
+      background: linear-gradient(180deg, rgba(69, 69, 69, .1) 0%, rgba(106, 106, 106, .1) 100%);
+    }
+
+    60% {
+      border: 1px solid rgba(68, 85, 68, 0.6);
+      background: linear-gradient(180deg, rgba(69, 69, 69, .2) 0%, rgba(106, 106, 106, .2) 100%);
+    }
+
+    to {
+      border: 1px solid #454;
+      background: linear-gradient(180deg, rgba(69, 69, 69, .3) 0%, rgba(106, 106, 106, .3) 100%);
+    }
+  }
+  
+}

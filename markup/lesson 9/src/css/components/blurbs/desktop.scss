@@ -1,0 +1,76 @@
+& {
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 59px ;
+  box-sizing: border-box;
+  width: 100%;
+  background: linear-gradient(to top, #322539 0%, #745083 100%);
+
+  &__item {
+    display: flex;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "LG";
+    text-shadow: 0px 1px 0px #000;
+
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 100;
+    }
+
+    p {
+      margin-top: 6px;
+      width: 222px;
+      font-size: 16px;
+      font-family: "OS Light" ;
+      line-height: 23px;
+    }
+
+    a {
+      margin-top: 35px;
+      font-size: 18px;
+      float: right;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        animation: link-blurbs .8s ease-out forwards;
+      }
+    }
+
+    .icon {
+      margin-top: 11px;
+      margin-right: 25px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/details/key.png");
+      background-size: cover;
+    }
+
+    .information {
+      text-align: justify;
+      word-break: break-all;
+    }
+
+    &--one {
+      margin-left: 0%;
+      margin-right: 4%;
+    }
+
+    &--two {
+      margin-right: 4%;
+      .icon {
+        background-image: url("../images/details/speach.png");
+      }
+    }
+
+    &--three {
+      .icon {
+        background-image: url("../images/details/music.png");
+      }
+
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@import '../desktop';
+& {
+  padding-top: 98px;
+  width: 100%;
+
+  &__info {
+    margin: 0px auto;
+    justify-content: space-between;
+    width: 750px;
+    padding-bottom: 73px;
+    border-bottom: none;
+  }
+
+  .info {
+    margin-left: 43px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    span {
+      display: block;
+      margin-top: -1px;
+    }
+
+    p {
+      margin-top: 3px;
+      width: 255px;
+      height: 148px;
+      overflow: hidden;
+      text-overflow: clip;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      line-height: 1.5;
+    }
+
+    &__article {
+      width: 312px;
+      height: 294px;
+
+      div {
+        position: absolute;
+        top: 17px;
+        left: -25px;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background: url("../images/details/startsIcon.png");
+        background-size: cover;
+      }
+
+    }
+  }
+
+
+  .updates {
+    margin-top: 32px;
+    margin-right: 14px;
+
+    .avatar {
+      margin-right: 16px;
+    }
+
+    h1 {
+      margin-top: 0px;
+      margin-bottom: 16px;
+    }
+
+    div h1 {
+      padding-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    div p {
+      overflow: hidden;
+      text-overflow: clip;
+      display: -webkit-box;
+      display: -moz-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      -moz-line-clamp: 1;
+      -moz-box-orient: vertical;
+      width: 256px;
+      white-space: nowrap;
+    }
+
+    a {
+      margin-right: -6px;
+      font-size: 20px;
+    }
+  }
+
+  &__clients {
+    border-top: 1px solid #e6e6e6;
+    padding: 27px 0px 27px;
+    div {
+      margin: 0px auto;
+      box-sizing: border-box;
+      width: 700px;
+      height: 65px;
+      background: url("../images/details/logos.png") no-repeat;
+      background-size: contain;
+      background-position: top center;
+    }
+  }
+
+}

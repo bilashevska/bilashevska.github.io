@@ -1,0 +1,16 @@
+@import '../theme/reset';
+@import '../theme/fonts';
+@import 'header/main';
+@import 'slider/main';
+@import 'blurbs/main';
+@import 'footer/main';
+@import 'content/main';
+@import 'news/main';
+
+body {
+  background: url("../images/backgrounds/bg960.jpg") no-repeat;
+  background-position: top center;
+  min-width: 320px;
+}
+
+

@@ -1,0 +1,174 @@
+& {
+  padding-top: 100px;
+  background-color: #f9f9f9;
+ width: 100%;
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 5.1%;
+    align-items: center;
+    box-sizing: border-box;
+
+    h1 {
+      margin-top: 30px;
+      margin-left: -2px;
+      letter-spacing: 0px;
+      font-weight: 200;
+      font-family: "LG";
+      font-size: 30px;
+      color: #454545;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+    }
+
+    span {
+      color: #edbfff;
+    }
+
+    p {
+      margin-top: 10px;
+      width: 340px;
+      font-family: "OS Light";
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__article {
+      padding: 0px 40px 25px;
+      box-sizing: border-box;
+      width: 429px;
+      height: 294px;
+      background: url("../images/details/comment.png");
+      background-size: cover;
+
+      div {
+        position: absolute;
+        top: 17px;
+        left: -25px;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background: url("../images/details/startsIcon.png");
+        background-size: cover;
+      }
+
+    }
+
+    &__controller {
+      display: flex;
+      justify-content: space-between;
+      margin: 3px auto 0px;
+      box-sizing: border-box;
+      width: 88px;
+
+      div {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+        box-shadow: 1px 2px 0px 0px rgba(255, 255, 255, 1);
+        background-color: #fff;
+
+        div {
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          div {
+           animation: content-progress .3s ease forwards;
+          }
+        }
+
+        &.active {
+          div {
+            border: 1px solid #454545;
+            background: linear-gradient(180deg, #454545 0%, #6a6a6a 100%);
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .updates {
+    margin-top: 30px;
+
+    &>div {
+      display: flex;
+      margin-bottom: 18px;
+    }
+
+    .avatar {
+      margin-right: 15px;
+      width: 49px;
+      height: 49px;
+      background: url("../images/details/updates1.png");
+      background-size: cover;
+    }
+
+    h1 {
+      margin-top: 1px;
+      margin-bottom: 15px;
+      font-family: "LG";
+      font-size: 30px;
+    }
+
+    div h1 {
+      margin-bottom: 10px;
+      font-family: "OS ExtraBold";
+      font-size: 16px;
+    }
+
+    div p {
+      font-family: "OS Light";
+      font-size: 16px;
+    }
+
+    a {
+      float: right;
+      margin-right: 5px;
+      font-size: 20px;
+      font-family: "LG";
+      color: #454545;
+      text-decoration: none;
+
+      &:hover {
+        animation: link-hover 1s ease-in-out infinite;
+      }
+    }
+  }
+  
+  &__clients {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    div {
+      margin-top: 25px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      width: 775px;
+      height: 65px;
+      background: url("../images/details/logos.png") no-repeat;
+      background-size: contain;
+    }
+  }
+
+}
