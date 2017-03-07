@@ -25,23 +25,23 @@ function removeClass(obj, cls) {
   obj.className = temp.join(' ');
 }
 
-var sliderSet  = document.querySelectorAll('.slider__controller > div');
-console.log(sliderSet.className);
+
+var slider = document.querySelector('.slider__controller');
+var sliderSet = slider.querySelectorAll('.outer');
 for(var i = 0; i < sliderSet.length; i++) {
-  sliderSet[i].attachEvent('onclick', function() {
-    console.log(this);
-    var active = document.querySelector('.slider__controller .active');
-    console.log(this);
+  sliderSet[i].onclick = function () {
+    var active = slider.querySelector('.active');
     removeClass(active,'active');
     addClass(this,'active');
-  });
+  }
 }
 
-var contentSet  = document.querySelectorAll('.info__controller');
+var content  = document.querySelector('.info__controller');
+var contentSet = content.querySelectorAll('.outer');
 for(var i = 0; i < contentSet.length; i++) {
-  contentSet[i].attachEvent('onclick', function() {
-    var active = document.querySelector('.info__controller .active');
+  contentSet[i].onclick = function() {
+    var active = content.querySelector('.active');
     removeClass(active,'active');
     addClass(this,'active');
-  });
+  }
 }

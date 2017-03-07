@@ -25,6 +25,7 @@
     box-sizing: border-box;
     width: 416px;
     height: 294px;
+    overflow: hidden;
     background: url("../images/details/comment.png");
     background-size: cover;
 
@@ -48,6 +49,7 @@
       text-overflow: clip;
       display: -webkit-box;
       -webkit-line-clamp: 7;
+      -moz-line-clamp: 7;
       -webkit-box-orient: vertical;
       font-size: 16px;
       line-height: 1.5;
