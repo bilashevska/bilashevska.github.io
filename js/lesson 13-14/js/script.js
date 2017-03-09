@@ -5,7 +5,7 @@ var serObj;
 var returnObj;
 var questions=[];
 var setQuestions = [
-   {
+  {
     id:'quest1',
     title: 'Вопрос №1',
     answer1: 'Ответ №1',
@@ -51,7 +51,6 @@ var current = questions[i];
 var m = $('.msg');
 
 $(".form-button").click(function(){
-  $(".form-button").attr('disabled', true);
   rad = $('input[type = radio]') ;
   for( var i = 0; i < rad.length; i++){
     var temp = $(rad[i]);

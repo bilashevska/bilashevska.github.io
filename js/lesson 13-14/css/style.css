@@ -1,6 +1,6 @@
 @font-face {
-		font-family: 'drugs'; /* Имя шрифта */
-		src: url( "../fonts/Drugs.otf"); /* Путь к файлу со шрифтом */
+  font-family: 'drugs'; /* Имя шрифта */
+	src: url( "../fonts/Drugs.otf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
