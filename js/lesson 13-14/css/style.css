@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'drugs'; /* Имя шрифта */
-	src: url( "../fonts/Drugs.otf"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/Drugs.otf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
-		font-family: 'intro'; /* Имя шрифта */
-		src: url( "../fonts/Intro.otf"); /* Путь к файлу со шрифтом */
+  font-family: 'intro'; /* Имя шрифта */
+  src: url("../fonts/Intro.otf"); /* Путь к файлу со шрифтом */
 }
 
-body>div {
+body > div {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -39,9 +39,9 @@ ol {
 
 li {
   margin: 15px;
-	box-sizing: border-box;
-	text-align: left;
-	font-weight: 900;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: 900;
 }
 
 li > div {
@@ -92,6 +92,7 @@ label:hover {
 .modal_form ol {
   list-style: none;
 }
+
 .modal_form li {
   font-family: 'drugs';
   font-size: 14px;
@@ -118,4 +119,17 @@ label:hover {
   box-sizing: border-box;
   border: none;
   cursor: pointer;
+}
+
+.overlay {
+  z-index:3;
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity:0.8;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  cursor:pointer;
+  display:none;
 }

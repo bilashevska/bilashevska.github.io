@@ -18,7 +18,7 @@
       <ol>
         <% questions.forEach(function(item) { %>
         <li>
-          <span><%=item.title%></span>
+          <span><%=item.question%></span>
           <div>
             <label style="display: block;">
               <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '1'>
@@ -48,6 +48,7 @@
       </div>
       <button type="reset" class="modal_close" form="form">Закрыть</button>
     </div>
+    <div  class="overlay"></div>
   </div>
 </script>
 
