@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Lesson 13-14</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon"  href="img/icon2x.png">
+  <meta charset="UTF-8">
+  <title>Lesson 13-14</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/icon2x.png">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
 </head>
 <body>
-  <script type="text/template" id="table-template">
-		<div class="wrapper">
-			<form id="form">
-				<h1>Тест по програмиированию</h1>
-					<ol>
-					<% questions.forEach(function(item) { %>
-						<li>
-							<span><%=item.title%></span>
-							<div>
-								<label style="display: block;">
-									<input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '1'>
-									<span><%=item.answer1%></span>
-								</label>
-							</div>
-							<div>
-								<label style="display: block;">
-									<input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '2'>
-									<span><%=item.answer2%></span>
-								</label>
-							</div>
-							<div>
-								<label style="display: block;">
-									<input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '3'>
-									<span><%=item.answer3%></span>
-								</label>
-							</div>
-						</li>
-					<% }); %>
-				</ol>
-				<button class="form-button">Проверить мои результаты</button>
+<script type="text/template" id="table-template">
+  <div class="wrapper">
+    <form id="form">
+      <h1>Тест по програмиированию</h1>
+      <ol>
+        <% questions.forEach(function(item) { %>
+        <li>
+          <span><%=item.title%></span>
+          <div>
+            <label style="display: block;">
+              <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '1'>
+              <span><%=item.answer1%></span>
+            </label>
+          </div>
+          <div>
+            <label style="display: block;">
+              <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '2'>
+              <span><%=item.answer2%></span>
+            </label>
+          </div>
+          <div>
+            <label style="display: block;">
+              <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '3'>
+              <span><%=item.answer3%></span>
+            </label>
+          </div>
+        </li>
+        <% }); %>
+      </ol>
+      <button class="form-button">Проверить мои результаты</button>
 
-			</form>
-			<div class="modal_form">
-        <div class="msg">
-        </div>
-			<button type="reset" class="modal_close" form="form">Закрыть</button>
-			</div>
+    </form>
+    <div class="modal_form">
+      <div class="msg">
+      </div>
+      <button type="reset" class="modal_close" form="form">Закрыть</button>
     </div>
-	</script>
+  </div>
+</script>
 
 
-
-<script  src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
