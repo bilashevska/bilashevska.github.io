@@ -1,7 +1,7 @@
 {
   "name": "gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kasper Landing.",
   "main": "gulp.js",
   "scripts": {
     "test": "scss-lint src/components/* --config lint.yml"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/bilashevska"
   },
-  "author": "",
+  "author": "Anastasiia Bilashevska",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bilashevska"

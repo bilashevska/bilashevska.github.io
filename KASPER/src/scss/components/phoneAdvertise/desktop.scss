@@ -1,0 +1,45 @@
+& {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000;
+
+   .phones {
+    width: 335px;
+    height: 400px;
+    align-self: flex-end;
+    background: url(../img/blackPhone.svg) 0% 00% no-repeat,
+    url(../img/whitePhone.svg) 100% -61% no-repeat;
+    background-size: 226px auto, 226px auto;
+  }
+
+  article {
+    float: right;
+    margin:90px 0px 90px 80px;
+    padding: 50px 0px 0px 60px;
+    box-sizing: border-box;
+    width: 45%;
+    height: 335px;
+    background-color: rgba(0, 199, 252, 0.5);
+
+    h1 {
+      margin-bottom:  60px;
+      font-family: "OS Regular";
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    p {
+      display: inline;
+      font-family: "OS Regular";
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    li {
+      margin-bottom:  20px;
+      padding-left: 50px;
+      line-height: 20px;
+      background: url(../img/iconMonitor.png) no-repeat;
+    }
+  }
+}

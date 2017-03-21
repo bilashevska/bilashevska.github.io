@@ -23,11 +23,17 @@
     }
 
     .logo {
+      display: block;
       margin-right: 20%;
       width: 112px;
       height: 36px;
+      text-decoration: none;
       background: url(../img/logo.svg) no-repeat;
       background-size: contain;
+      
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     nav {
@@ -35,6 +41,22 @@
       z-index: 2;
       box-sizing: border-box;
       align-self: flex-end;
+
+      a {
+        display: block;
+        padding: 0px 6px 45px;
+        box-sizing: border-box;
+        height: 60px;
+        font-family: "OS Semibold";
+        font-size: 13px;
+        text-decoration: none;
+        color: #ffffff;
+
+        &:hover {
+          color: #00c7fc;
+          border-bottom: 1px solid #00c7fc ;
+        }
+      }
     }
 
     ul {
@@ -46,22 +68,8 @@
     li {
       box-sizing: border-box;
     }
-    
-    a {
-      display: block;
-      padding: 0px 6px 45px;
-      box-sizing: border-box;
-      height: 60px;
-      font-family: "OS Semibold";
-      font-size: 13px;
-      text-decoration: none;
-      color: #ffffff;
 
-      &:hover {
-        color: #00c7fc;
-        border-bottom: 1px solid #00c7fc ;
-      }
-    }
+
 
     .search {
       position: absolute;
