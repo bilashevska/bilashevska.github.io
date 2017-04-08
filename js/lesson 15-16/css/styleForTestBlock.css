@@ -1,0 +1,117 @@
+.test {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  border: 6px double #04756F;
+}
+
+h1 {
+  margin: 0 auto 10px;
+  font-size: 20px;
+  font-family: 'intro';
+  color: #FF2D00;
+}
+
+ol {
+  margin: auto;
+  box-sizing: border-box;
+  list-style-type: decimal;
+}
+
+li {
+  margin: 15px;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: 900;
+}
+
+li > div {
+  margin-top: 10px;
+}
+
+.form-button {
+  margin: 40px auto 0;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 200px;
+  border: none;
+  line-height: 20px;
+  font-size: 13px;
+  background-color: #FF6D00;
+  font-family: 'drugs';
+  font-weight: 900;
+  color: #fff;
+}
+
+label:hover {
+  cursor: pointer;
+  text-shadow: 1px 0px 2px rgba(4, 180, 174, 0.34);
+}
+
+.form-button:hover {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px outset #CDDC39;
+  cursor: pointer;
+}
+
+.modal_form {
+  align-self: center;
+  width: 500px;
+  height: 150px;
+  border: 3px double #FF6D00;
+  background: #fff;
+  margin-top: -20%;
+  position: fixed;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 10px;
+}
+
+.modal_form ol {
+  list-style: none;
+}
+
+.modal_form li {
+  font-family: 'drugs';
+  font-size: 14px;
+}
+
+.modal_form p {
+  font-family: 'drugs';
+  font-size: 14px;
+}
+
+.modal_close {
+  margin: 0 auto;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background-color: #4CAF50;
+  font-family: 'drugs';
+  color: #fff;
+}
+
+.modal_close:hover {
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay {
+  z-index:3;
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity:0.8;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  cursor:pointer;
+  display:none;
+}

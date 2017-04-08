@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 15-16</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleForTestBlock.css">
+  <link rel="icon" href="img/icon2x.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
+
+</head>
+
+<body>
+<form class="gifs-search">
+    <input type="text" class="gifs-request">
+  <button class="start-search">GO!</button>
+</form>
+  <div class="gifs-result">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <form class="make-question">
+    <div>
+      <label for="number">Номер вопроса:</label>
+      <input type="text" id="number" data-title="Введите номер вопроса."size="40">
+    </div>
+    <div>
+      <label for="question">Вопрос:</label>
+      <input type="text" id="question" data-title="Введите формулировку вопроса."size="40">
+    </div>
+    <div>
+      <label for="answer1">Ответ №1:</label>
+      <input type="text" id="answer1" data-title="Введите первый вариант ответа."size="40">
+    </div>
+    <div>
+      <label for="answer2">Ответ №2:</label>
+      <input type="text" id="answer2" data-title="Введите второй вариант ответа."size="40">
+    </div>
+    <div>
+      <label for="answer3">Ответ №3:</label>
+      <input type="text" id="answer3" data-title="Введите третий вариант ответа."size="40">
+    </div>
+    <div>
+      <label for="correct">Правильный ответ:</label>
+      <input type="text" id="correct" data-title="Введите № правильного ответа."size="40">
+    </div>
+    <div>
+      <button type="submit" class="make-submit">Добавить вопрос</button>
+      <button type="reset" class="make-reset">Очистить поле ввода</button>
+    </div>
+    <h1>СОЗДАНО ВОПРОСОВ:<span>0</span></h1>
+    <button class="start-test">Запустить тест!</button>
+  </form>
+<script type="text/template" id="table-template">
+  <div class="wrapper">
+    <form id="form" class="test">
+      <h1>Тест по програмиированию</h1>
+      <ol>
+        <% questions.forEach(function(item) { %>
+        <li>
+          <span><%=item.question%></span>
+          <div>
+            <label style="display: block;">
+              <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '1'>
+              <span><%=item.answer1%></span>
+            </label>
+          </div>
+          <div>
+            <label style="display: block;">
+              <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '2'>
+              <span><%=item.answer2%></span>
+            </label>
+          </div>
+          <div>
+            <label style="display: block;">
+              <input name=<%='quest'+(questions.indexOf(item)+1)%> type="radio" value = '3'>
+              <span><%=item.answer3%></span>
+            </label>
+          </div>
+        </li>
+        <% }); %>
+      </ol>
+    </form>
+    <button class="form-button">Проверить мои результаты</button>
+    <div class="modal_form">
+      <div class="msg">
+      </div>
+      <button type="reset" class="modal_close" form="form">Закрыть</button>
+    </div>
+    <div class="overlay"></div>
+  </div>
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
