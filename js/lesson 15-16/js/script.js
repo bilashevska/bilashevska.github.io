@@ -1,5 +1,3 @@
-var xhr = new XMLHttpRequest();
-
 var current;
 var key;
 var questionCounter = 0;
@@ -13,7 +11,8 @@ var questions = [];
 var msgBlock = $('.msg');
 
 //поиск гифок
-$('.start-search').click(function (e) {
+var startSearch = document.querySelector('.start-search');
+startSearch.onclick = function (e) {
   e.preventDefault();
 
   var request = $('.gifs-request').val();
@@ -21,19 +20,25 @@ $('.start-search').click(function (e) {
   if(request == ""){
     alert("Поле поиска пустое!")
   } else {
-    request = request.split(" ");
-    request = request.join("+");
-    request = "http://api.giphy.com/v1/gifs/search?q="+request+"&api_key=dc6zaTOxFJmzC&limit=10";
+    var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', request, true);
+    request = request.split(" ").join("+");
+    xhr.open('GET', ("http://api.giphy.com/v1/gifs/search?q="+request+"&api_key=dc6zaTOxFJmzC&limit=10"), true);
     xhr.onload = function () {
       var s = xhr.responseText;
       var gifs = JSON.parse(s);
-      var gifBlock = document.querySelectorAll('.gifs-result div')
+      var gifBlock = document.querySelector('.gifs-result');
+
       gifs = gifs.data;
       for(var i = 0;i < gifs.length; i++){
-        var temp = gifs[i].images.fixed_width .url;
-        gifBlock[i].style.backgroundImage = 'url('+temp+")";
+        var div = document.createElement('div');
+        gifBlock.appendChild(div);
+      }
+
+      var gifBlockDiv = document.querySelectorAll('.gifs-result div');
+      for(var i = 0;i < gifs.length; i++){
+        var temp = gifs[i].images.fixed_width.url;
+        gifBlockDiv[i].style.backgroundImage = 'url('+temp+")";
       }
     }
     xhr.onerror = function () {
@@ -44,7 +49,7 @@ $('.start-search').click(function (e) {
     $(".gifs-result").css("display", "flex");
   }
 
-})
+}
 
 //создание вопросов для теста
 //конструктор вопроса
@@ -58,7 +63,8 @@ function test(number, question, answer1,answer2, answer3, correct) {
 }
 
 //добавить вопрос
-$('.make-submit').click(function (event) {
+var makeSubmit = document.querySelector('.make-submit');
+makeSubmit.onclick =function (event) {
   var temp;
   event.preventDefault();
 
@@ -71,7 +77,7 @@ $('.make-submit').click(function (event) {
 
   initialTemplate.push(temp);
   document.querySelector('.make-question').reset();
-})
+}
 
 //начать тест
 $('.start-test').click(function (event) {
@@ -79,12 +85,13 @@ $('.start-test').click(function (event) {
 
   $(".wrapper").remove();
   questions = [];
+
   for (var i = 0; i < initialTemplate.length; i++) {
-  key = 'question' + 1;
-  serializeObj = JSON.stringify(initialTemplate[i]);
-  localStorage.setItem(key, serializeObj);
-  returnObj = JSON.parse(localStorage.getItem(key));
-  questions.push(returnObj);
+    key = 'question' + 1;
+    serializeObj = JSON.stringify(initialTemplate[i]);
+    localStorage.setItem(key, serializeObj);
+    returnObj = JSON.parse(localStorage.getItem(key));
+    questions.push(returnObj);
 }
 
   var template = _.template(document.getElementById('table-template').innerHTML);
@@ -94,6 +101,7 @@ $('.start-test').click(function (event) {
     event.preventDefault();
     radio = $('input[type = radio]');
     console.log(radio);
+
     for (var i = 0; i < radio.length; i++) {
       var temp = $(radio[i]);
 

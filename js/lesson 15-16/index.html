@@ -9,25 +9,14 @@
   <link rel="icon" href="img/icon2x.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
-
 </head>
 
 <body>
-<form class="gifs-search">
+  <form class="gifs-search">
     <input type="text" class="gifs-request">
-  <button class="start-search">GO!</button>
+    <button class="start-search">GO!</button>
 </form>
   <div class="gifs-result">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
   </div>
   <form class="make-question">
     <div>
@@ -51,7 +40,7 @@
       <input type="text" id="answer3" data-title="Введите третий вариант ответа."size="40">
     </div>
     <div>
-      <label for="correct">Правильный ответ:</label>
+      <label for="correct">Правильный ответ №:</label>
       <input type="text" id="correct" data-title="Введите № правильного ответа."size="40">
     </div>
     <div>
@@ -61,7 +50,8 @@
     <h1>СОЗДАНО ВОПРОСОВ:<span>0</span></h1>
     <button class="start-test">Запустить тест!</button>
   </form>
-<script type="text/template" id="table-template">
+
+  <script type="text/template" id="table-template">
   <div class="wrapper">
     <form id="form" class="test">
       <h1>Тест по програмиированию</h1>
@@ -100,7 +90,6 @@
     <div class="overlay"></div>
   </div>
 </script>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
